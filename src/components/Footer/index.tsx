@@ -1,45 +1,44 @@
-import React from 'react';
-import FooterColumn from './FooterColumn';
+import React from "react";
+import FooterColumn from "./FooterColumn";
 
 const Footer: React.FC = () => {
   const footerData = [
     {
-      title: 'ECOSYSTEM',
+      title: "ECOSYSTEM",
       links: [
-        { name: 'Community', url: '/community' },
-        { name: 'Jobs', url: '/jobs' },
-        { name: 'Wallets', url: '/wallets' },
-        { name: 'Dapps', url: '/dapps' },
-        { name: 'Brand Hub', url: '/brand-hub' },
-        { name: 'Telemetry', url: '/telemetry' },
-        { name: 'Treasury', url: '/treasury' },
+        { name: "Community", url: "/community" },
+        { name: "Jobs", url: "/jobs" },
+        { name: "Wallets", url: "/wallets" },
+        { name: "Dapps", url: "/dapps" },
+        { name: "Brand Hub", url: "/brand-hub" },
+        { name: "Telemetry", url: "/telemetry" },
+        { name: "Treasury", url: "/treasury" },
       ],
     },
     {
-      title: 'FEATURES',
+      title: "FEATURES",
       links: [
-        { name: 'Technology', url: '/technology' },
-        { name: 'BlockSpace', url: '/blockspace' },
-        { name: 'DOT token', url: '/dot_token' },
+        { name: "Technology", url: "/technology" },
+        { name: "BlockSpace", url: "/blockspace" },
+        { name: "Nomota AI token", url: "/token" },
       ],
     },
     {
-      title: 'DEVELOPMENT',
+      title: "DEVELOPMENT",
       links: [
-        { name: 'Documentation', url: '/documentation' },
-        { name: 'Grants', url: '/grants' },
-        { name: 'Bounties', url: '/bounties' },
+        { name: "Documentation", url: "/documentation" },
+        { name: "Grants", url: "/grants" },
+        { name: "Bounties", url: "/bounties" },
       ],
     },
     {
-      title: 'ABOUT',
+      title: "ABOUT",
       links: [
-        { name: 'About us', url: '/about_website' },
-        { name: 'Blog', url: '/blog' },
-        { name: 'Newsroom', url: '/newsroom' },
+        { name: "About us", url: "/about_website" },
+        { name: "Blog", url: "/blog" },
+        { name: "Newsroom", url: "/newsroom" },
       ],
     },
-    
   ];
 
   return (
