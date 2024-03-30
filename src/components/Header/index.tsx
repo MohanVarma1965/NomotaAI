@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Header: React.FC = () => {
   return (
@@ -6,9 +6,9 @@ const Header: React.FC = () => {
       <div className="container flex items-center justify-between px-4 py-4 mx-auto">
         <a href="/" className="flex items-center text-xl font-bold">
           <span className="mr-2">🚀</span>
-          NOMOTO AI
+          Nomota AI
         </a>
-        
+
         <nav className="hidden space-x-6 text-lg md:flex">
           <a href="/products" className="p-2 transition duration-150 ease-in-out hover:text-gray-300">
             Products
