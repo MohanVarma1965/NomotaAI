@@ -31,11 +31,19 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex justify-around py-4 text-lg bg-gray-800 border-t border-gray-700 md:hidden">
-        <a href="/news" className="hover:text-gray-300">Products</a>
-        <a href="/staking" className="hover:text-gray-300">Tokenomics</a>
-        <a href="/bridge" className="hover:text-gray-300">Roadmap</a>
-        <a href="/docs" className="hover:text-gray-300">Docs</a>
+      <div className="flex items-center justify-around py-4 text-lg bg-gray-800 border border-gray-700 md:hidden">
+        <a href="/news" className="flex flex-col items-center space-y-1 hover:text-gray-300">
+          Products
+        </a>
+        <a href="/staking" className="flex flex-col items-center space-y-1 hover:text-gray-300">
+          Tokenomics
+        </a>
+        <a href="/bridge" className="flex flex-col items-center space-y-1 hover:text-gray-300">
+          Roadmap
+        </a>
+        <a href="/docs" className="flex flex-col items-center space-y-1 hover:text-gray-300">
+          Docs
+        </a>
       </div>
     </header>
   );
