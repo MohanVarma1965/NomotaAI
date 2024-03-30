@@ -7,6 +7,15 @@ const Tokenomics: React.FC = () => {
     const circumference = 2 * Math.PI * radius;
     const offset = ((100 - percentage) / 100) * circumference;
 
+    let strokeColor;
+    if (percentage >= 75) {
+      strokeColor = "#10b981"; 
+    } else if (percentage >= 50) {
+      strokeColor = "#f59e0b"; 
+    } else {
+      strokeColor = "#ef4444";
+    }
+
     return (
       <svg className="w-24 h-24" viewBox="0 0 100 100">
         <circle cx="50" cy="50" r={radius} fill="transparent" stroke="rgba(255,255,255,0.2)" strokeWidth="8" />
@@ -15,7 +24,7 @@ const Tokenomics: React.FC = () => {
           cy="50"
           r={radius}
           fill="transparent"
-          stroke="red"
+          stroke={strokeColor}
           strokeWidth="8"
           strokeDasharray={circumference}
           strokeDashoffset={offset}
@@ -25,6 +34,7 @@ const Tokenomics: React.FC = () => {
       </svg>
     );
   };
+
 
   return (
     <div className="py-12 text-white bg-gradient-to-b from-gray-800 to-gray-900 md:px-4 max-md:p-8">
@@ -68,13 +78,13 @@ const Tokenomics: React.FC = () => {
 
         <div className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105">
           <div className="flex justify-center">
-            {generateCircle(10)}
+            {generateCircle(38)}
           </div>
           <h3 className="mb-2 text-xl font-bold text-center">Allocated for Staking</h3>
           <div className="flex justify-center mb-4">
-            <CheckCircleIcon className="w-8 h-8 text-green-400" />
+            <CurrencyDollarIcon className="w-8 h-8 text-green-400" />
           </div>
-          <p className="mb-4 font-semibold text-center">Locked for 1 Year</p>
+          <p className="mb-4 font-semibold text-center">Rewards</p>
           <p className="leading-relaxed text-md">
           To enrich the Nomota AI experience and incentivize our community, we've allocated 10% of our tokens
             specifically for staking rewards. This allocation is designed to reward users who invest in the stability
@@ -86,7 +96,7 @@ const Tokenomics: React.FC = () => {
         
         <div className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105">
           <div className="flex justify-center">
-            {generateCircle(5)}
+            {generateCircle(52)}
           </div>
           <h3 className="mb-2 text-xl font-bold text-center">Allocated for Investors</h3>
           <div className="flex justify-center mb-4">
