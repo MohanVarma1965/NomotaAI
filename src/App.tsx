@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { ScrollToAnchor } from "./components/Effects";
 
 const Main = lazy(() => import("./components/Main"));
 const Products = lazy(() => import("./components/Products"));
@@ -16,6 +17,7 @@ const Marketplace = lazy(() => import("./components/Products/Marketplace"));
 function App() {
   return (
     <Router>
+      <ScrollToAnchor />
       <Header />
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>

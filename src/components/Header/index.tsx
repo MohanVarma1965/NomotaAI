@@ -1,27 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   return (
     <header className="text-white bg-gray-900 shadow-md">
       <div className="container flex items-center justify-between px-4 py-4 mx-auto">
-        <a href="/" className="flex items-center text-xl font-bold">
+        <Link to="/" className="flex items-center text-xl font-bold">
           <span className="mr-2">
             <img src="./temp-tiny.png" />
           </span>
           Nomota AI
-        </a>
+        </Link>
 
         <nav className="hidden space-x-6 text-lg md:flex">
-          <a href="/products" className="p-2 transition duration-150 ease-in-out hover:text-gray-300">
+          <Link to="/products" className="p-2 transition duration-150 ease-in-out hover:text-gray-300">
             Products
-          </a>
-          <a href="/tokenomics" className="p-2 transition duration-150 ease-in-out hover:text-gray-300">
+          </Link>
+          <Link to="/#tokenomics" className="p-2 transition duration-150 ease-in-out hover:text-gray-300">
             Tokenomics
-          </a>
-          <a href="/roadmap" className="p-2 transition duration-150 ease-in-out hover:text-gray-300">
+          </Link>
+          <Link to="/#roadmap" className="p-2 transition duration-150 ease-in-out hover:text-gray-300">
             Roadmap
-          </a>
-          <a href="/documentation" className="p-2 transition duration-150 ease-in-out hover:text-gray-300">
+          </Link>
+          <a href="https://docs.nomota.nl" target="_blank" className="p-2 transition duration-150 ease-in-out hover:text-gray-300">
             Documentation
           </a>
         </nav>

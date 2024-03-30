@@ -39,7 +39,7 @@ const Tokenomics: React.FC = () => {
   return (
     <div className="py-12 text-white bg-gradient-to-b from-gray-800 to-gray-900 md:px-4 max-md:p-8">
       <div className="mb-12 text-center">
-        <h2 className="text-4xl font-bold">Tokenomics</h2>
+        <h2 id="tokenomics" className="text-4xl font-bold">Tokenomics</h2>
       </div>
       <div className="grid max-w-6xl grid-cols-1 gap-6 mx-auto lg:grid-cols-2">
 

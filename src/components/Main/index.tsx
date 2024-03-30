@@ -13,8 +13,8 @@ const Main: React.FC = () => {
   return (
     <div>
       <MainPageBanner />
-      <OnePlaceTiles />
-      <LearnMoreSection />
+      {/* <OnePlaceTiles /> */}
+      {/* <LearnMoreSection /> */}
       <FeaturesSection />
       <Roadmap />
       <Tokenomics />
