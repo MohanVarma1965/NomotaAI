@@ -14,7 +14,7 @@ const Main: React.FC = () => {
     <div>
       <MainPageBanner />
       {/* <OnePlaceTiles /> */}
-      <KeyFeatures />
+      {/* <KeyFeatures /> */}
       {/* <LearnMoreSection /> */}
       <FeaturesSection />
       <Roadmap />
