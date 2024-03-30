@@ -3,7 +3,7 @@ import { CheckCircleIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline
 
 const Tokenomics: React.FC = () => {
   const generateCircle = (percentage: number) => {
-    const radius = 42; // Radius of the circle
+    const radius = 42;
     const circumference = 2 * Math.PI * radius;
     const offset = ((100 - percentage) / 100) * circumference;
 
@@ -42,7 +42,7 @@ const Tokenomics: React.FC = () => {
             <CheckCircleIcon className="w-8 h-8 text-green-400" />
           </div>
           <p className="mb-4 font-semibold text-center">Locked for 1 Year</p>
-          <p className="text-sm leading-relaxed">
+          <p className="leading-relaxed text-md">
           A substantial majority of our tokens are dedicated to ensuring robust liquidity on Uniswap. This lock-in
             period signifies our commitment to long-term stability and trust, preventing major fluctuations and
             providing a secure trading environment for all users.
@@ -58,7 +58,7 @@ const Tokenomics: React.FC = () => {
             <CheckCircleIcon className="w-8 h-8 text-green-400" />
           </div>
           <p className="mb-4 font-semibold text-center">CEX</p>
-          <p className="text-sm leading-relaxed">
+          <p className="leading-relaxed text-md">
             To broaden accessibility and enhance trading options for our users, we've allocated a significant portion of
             our tokens for liquidity pools on centralized exchanges. This strategic reserve is essential for integrating
             into the wider crypto ecosystem, facilitating seamless transactions and enhancing user experience on various
@@ -75,7 +75,7 @@ const Tokenomics: React.FC = () => {
             <CheckCircleIcon className="w-8 h-8 text-green-400" />
           </div>
           <p className="mb-4 font-semibold text-center">Locked for 1 Year</p>
-          <p className="text-sm leading-relaxed">
+          <p className="leading-relaxed text-md">
           To enrich the Nomota AI experience and incentivize our community, we've allocated 10% of our tokens
             specifically for staking rewards. This allocation is designed to reward users who invest in the stability
             and growth of our platform, offering a tangible appreciation for their confidence and support. By staking
@@ -93,7 +93,7 @@ const Tokenomics: React.FC = () => {
             <CheckCircleIcon className="w-8 h-8 text-green-400" />
           </div>
           <p className="mb-4 font-semibold text-center">Vesting Period of 6 weeks</p>
-          <p className="text-sm leading-relaxed">
+          <p className="leading-relaxed text-md">
             To enrich the Nomota AI experience and incentivize our community, we've allocated 10% of our tokens specifically for staking rewards. This allocation is designed to reward users who invest in the stability and growth of our platform, offering a tangible appreciation for their confidence and support. By staking
             their tokens, users not only contribute to the security and robustness of Nomota AI but also earn rewards
             that can be used across our platform, including on bot usage and in our marketplace for VPS and GPU rentals.
