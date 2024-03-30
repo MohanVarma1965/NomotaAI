@@ -6,7 +6,7 @@ import MobileNavigation from './MobileNavigation';
 const Header: React.FC = () => {
   return (
     <header className="py-4 text-white bg-gray-900 shadow-md">
-      <div className="container flex items-center justify-between mx-auto">
+      <div className="container flex items-center justify-between mx-auto max-sm:px-4">
         <a href="/" className="flex items-center text-xl font-bold">
           <span className="mr-2">🚀</span>
           NOMOTA AI
