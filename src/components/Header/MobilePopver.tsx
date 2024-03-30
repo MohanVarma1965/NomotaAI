@@ -1,5 +1,6 @@
 import React from 'react';
 import { Popover } from '@headlessui/react';
+import { Link } from 'react-router-dom';
 
 const MobileNavigation: React.FC = () => {
   return (
@@ -44,10 +45,10 @@ const MobileNavigation: React.FC = () => {
                 </Popover.Button>
               </div>
               <nav className="flex flex-col pl-4 space-y-4">
-                <a href="/products" className="p-2 text-lg font-medium text-gray-900 rounded-md hover:bg-gray-100">Products</a>
-                <a href="/tokenomics" className="p-2 text-lg font-medium text-gray-900 rounded-md hover:bg-gray-100">Tokenomics</a>
-                <a href="/roadmap" className="p-2 text-lg font-medium text-gray-900 rounded-md hover:bg-gray-100">Roadmap</a>
-                <a href="/documentation" className="p-2 text-lg font-medium text-gray-900 rounded-md hover:bg-gray-100">Documentation</a>
+                <Link to="/products" className="p-2 text-lg font-medium text-gray-900 rounded-md hover:bg-gray-100">Products</Link>
+                <Link to="/#tokenomics" className="p-2 text-lg font-medium text-gray-900 rounded-md hover:bg-gray-100">Tokenomics</Link>
+                <Link to="/#roadmap" className="p-2 text-lg font-medium text-gray-900 rounded-md hover:bg-gray-100">Roadmap</Link>
+                <a href="https://docs.nomota.nl" target="_blank" className="p-2 text-lg font-medium text-gray-900 rounded-md hover:bg-gray-100">Documentation</a>
               </nav>
             </div>
           </Popover.Panel>

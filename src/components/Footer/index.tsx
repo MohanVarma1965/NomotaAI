@@ -4,39 +4,25 @@ import FooterColumn from "./FooterColumn";
 const Footer: React.FC = () => {
   const footerData = [
     {
-      title: "ECOSYSTEM",
+      title: "DEVELOPMENt",
       links: [
-        { name: "Community", url: "/community" },
-        { name: "Jobs", url: "/jobs" },
-        { name: "Wallets", url: "/wallets" },
-        { name: "Dapps", url: "/dapps" },
-        { name: "Brand Hub", url: "/brand-hub" },
-        { name: "Telemetry", url: "/telemetry" },
-        { name: "Treasury", url: "/treasury" },
-      ],
-    },
-    {
-      title: "FEATURES",
-      links: [
-        { name: "Technology", url: "/technology" },
-        { name: "BlockSpace", url: "/blockspace" },
-        { name: "Nomota AI token", url: "/token" },
-      ],
-    },
-    {
-      title: "DEVELOPMENT",
-      links: [
-        { name: "Documentation", url: "/documentation" },
-        { name: "Grants", url: "/grants" },
-        { name: "Bounties", url: "/bounties" },
+        { name: "Status", url: "https://status.nomota.nl" },
+        { name: "Documentation", url: "https://docs.nomota.nl" },
       ],
     },
     {
       title: "ABOUT",
       links: [
-        { name: "About us", url: "/about_website" },
-        { name: "Blog", url: "/blog" },
-        { name: "Newsroom", url: "/newsroom" },
+        { name: "About us", to: "/about" },
+        { name: "Blog", to: "/blog" },
+      ],
+    },
+    {
+      title: "LEGAL",
+      links: [
+        { name: "Acceptable Use Policy", to: "/acceptable-use" },
+        { name: "Terms of Service", to: "/terms" },
+        { name: "Privacy policy", to: "/privacy-policy" },
       ],
     },
   ];
@@ -44,13 +30,13 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-white py-8">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-3 gap-8">
           {footerData.map((column, index) => (
             <FooterColumn key={index} title={column.title} links={column.links} />
           ))}
         </div>
         <div className="text-center text-sm text-gray-500 mt-8">
-          © 2024 Web3 Foundation | Legal Disclosures | Disclaimer | Privacy | Manage Cookies
+          © 2024 Nomota
         </div>
       </div>
     </footer>
