@@ -13,28 +13,23 @@ const Header: React.FC = () => {
         <nav>
           <ul className="flex space-x-4 md:space-x-6">
             <li>
-              <a href="/whitepaper" className="hover:text-gray-700">
-                Whitepaper
+              <a href="/products" className="hover:text-gray-700">
+                Products
               </a>
             </li>
             <li>
-              <a href="/learn" className="hover:text-gray-700">
-                Learn
+              <a href="/tokenomics" className="hover:text-gray-700">
+                Tokenomics
               </a>
             </li>
             <li>
-              <a href="/use-velo" className="hover:text-gray-700">
-                Use Nomota AI
+              <a href="/roadmap" className="hover:text-gray-700">
+                Roadmap
               </a>
             </li>
             <li>
-              <a href="/about" className="hover:text-gray-700">
-                About Nomota AI
-              </a>
-            </li>
-            <li>
-              <a href="/community" className="hover:text-gray-700">
-                Community
+              <a href="/documentation" className="hover:text-gray-700">
+                Documentation
               </a>
             </li>
           </ul>
