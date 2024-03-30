@@ -44,10 +44,10 @@ const Tokenomics: React.FC = () => {
       <div className="grid max-w-6xl grid-cols-1 gap-6 mx-auto lg:grid-cols-2">
 
         <div className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105">
+        <h3 className="mb-2 text-2xl font-bold text-center">Liquidity Pool Uniswap</h3>
           <div className="flex justify-center">
-            {generateCircle(76)}
+            {generateCircle(75)}
           </div>
-          <h3 className="mb-2 text-xl font-bold text-center">Liquidity Pool Uniswap</h3>
           <div className="flex justify-center mb-4">
             <CheckCircleIcon className="w-8 h-8 text-green-400" />
           </div>
@@ -60,14 +60,14 @@ const Tokenomics: React.FC = () => {
         </div>
 
         <div className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105">
+          <h3 className="mb-2 text-2xl font-bold text-center">Reserved Liquidity Pool</h3>
           <div className="flex justify-center">
             {generateCircle(10)}
           </div>
-          <h3 className="mb-2 text-xl font-bold text-center">Reserved Liquidity Pool</h3>
           <div className="flex justify-center mb-4">
             <CheckCircleIcon className="w-8 h-8 text-green-400" />
           </div>
-          <p className="mb-4 font-semibold text-center">CEX</p>
+          <p className="mb-4 font-semibold text-center">Reserved for MEXC and other future CEX listings</p>
           <p className="leading-relaxed text-md">
             To broaden accessibility and enhance trading options for our users, we've allocated a significant portion of
             our tokens for liquidity pools on centralized exchanges. This strategic reserve is essential for integrating
@@ -77,36 +77,34 @@ const Tokenomics: React.FC = () => {
         </div>
 
         <div className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105">
+          <h3 className="mb-2 text-2xl font-bold text-center">Allocated for Staking Rewards</h3>
           <div className="flex justify-center">
-            {generateCircle(38)}
+            {generateCircle(10)}
           </div>
-          <h3 className="mb-2 text-xl font-bold text-center">Allocated for Staking</h3>
           <div className="flex justify-center mb-4">
             <CurrencyDollarIcon className="w-8 h-8 text-green-400" />
           </div>
-          <p className="mb-4 font-semibold text-center">Rewards</p>
+          <p className="mb-4 font-semibold text-center">7% - 15% APY</p>
           <p className="leading-relaxed text-md">
           To enrich the Nomota AI experience and incentivize our community, we've allocated 10% of our tokens
             specifically for staking rewards. This allocation is designed to reward users who invest in the stability
-            and growth of our platform, offering a tangible appreciation for their confidence and support. By staking
-            their tokens, users not only contribute to the security and robustness of Nomota AI but also earn rewards
-            that can be used across our platform, including on bot usage and in our marketplace for VPS and GPU rentals.
+            and growth of our platform, offering a tangible appreciation for their confidence and support.
             </p>
         </div>
         
         <div className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105">
+          <h3 className="mb-2 text-2xl font-bold text-center">Allocated for Investors</h3>
           <div className="flex justify-center">
-            {generateCircle(52)}
+            {generateCircle(5)}
           </div>
-          <h3 className="mb-2 text-xl font-bold text-center">Allocated for Investors</h3>
           <div className="flex justify-center mb-4">
             <CheckCircleIcon className="w-8 h-8 text-green-400" />
           </div>
           <p className="mb-4 font-semibold text-center">Vesting Period of 6 weeks</p>
           <p className="leading-relaxed text-md">
-            To enrich the Nomota AI experience and incentivize our community, we've allocated 10% of our tokens specifically for staking rewards. This allocation is designed to reward users who invest in the stability and growth of our platform, offering a tangible appreciation for their confidence and support. By staking
-            their tokens, users not only contribute to the security and robustness of Nomota AI but also earn rewards
-            that can be used across our platform, including on bot usage and in our marketplace for VPS and GPU rentals.
+          Recognizing the crucial role of our early supporters, we've earmarked a portion of tokens for our investors. 
+          This allocation comes with a vesting period of 6 weeks, ensuring our investors are aligned with the long-term 
+          vision and success of Nomota AI, while also allowing for gradual market entry.
           </p>
         </div>
 
