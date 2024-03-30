@@ -10,10 +10,7 @@ interface MarketPlaceSubItemProps {
   description: string;
 }
 
-const MarketPlaceItem: React.FC<MarketPlaceItemProps> = ({
-  title,
-  items,
-}) => {
+const MarketPlaceItem: React.FC<MarketPlaceItemProps> = ({ title, items }) => {
   return (
     <div>
       <h3>{title}</h3>

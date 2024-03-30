@@ -7,7 +7,7 @@ const Header: React.FC = () => {
       <div className="container flex items-center justify-between px-4 py-4 mx-auto">
         <Link to="/" className="flex items-center text-xl font-bold">
           <span className="mr-2">
-            <img src="./temp-tiny.png" />
+            <img src="./logo-xs.png" />
           </span>
           Nomota AI
         </Link>

@@ -30,7 +30,7 @@ const featuresData = [
   {
     title: 'Music Generation',
     description: 'Magic music generation.',
-    imageUrl: 'image-generation.webp',
+    imageUrl: 'music.png',
     linkUrl: '/products/music-generation',
   },
   {

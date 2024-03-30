@@ -14,6 +14,11 @@ const VoiceGeneration = lazy(() => import("./components/Products/VoiceGeneration
 const ImageGeneration = lazy(() => import("./components/Products/ImageGeneration"));
 const Marketplace = lazy(() => import("./components/Products/Marketplace"));
 
+const AboutUs = lazy(() => import("./components/Pages/AboutUs"));
+const AcceptableUse = lazy(() => import("./components/Pages/AcceptableUse"));
+const PrivacyPolicy = lazy(() => import("./components/Pages/PrivacyPolicy"));
+const TermsOfService = lazy(() => import("./components/Pages/TermsOfService"));
+
 function App() {
   return (
     <Router>
@@ -29,6 +34,10 @@ function App() {
           <Route path="/products/music-generation" element={<MusicGeneration />} />
           <Route path="/products/image-generation" element={<ImageGeneration />} />
           <Route path="/products/marketplace" element={<Marketplace />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/acceptable-use" element={<AcceptableUse />} />
+          <Route path="/terms" element={<TermsOfService />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </Suspense>
       <Footer />
