@@ -10,7 +10,7 @@ const Tokenomics: React.FC = () => {
       <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
         <div className="flex flex-col items-center">
           <div className="w-24 h-24 rounded-full border-4 border-red-500 flex items-center justify-center">
-            <span className="text-2xl">76%</span>
+            <span className="text-2xl">75%</span>
           </div>
           <h3 className="text-xl mt-2">Liquidity Pool Uniswap</h3>
           <CheckCircleIcon className="h-8 w-8 mt-2" />

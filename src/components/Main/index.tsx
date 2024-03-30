@@ -5,15 +5,18 @@ import LearnMoreSection from "./LearnMoreSection";
 import Roadmap from "./Roadmap";
 import Tokenomics from "./Tokenomics";
 import FeaturesSection from "./FeaturesSection";
+import SocialIcons from "./SocialIcons";
 
 const Main: React.FC = () => {
   return (
     <div>
       <MainPageBanner />
       <OnePlaceTiles />
-      <FeaturesSection/>
       <LearnMoreSection />
+      <FeaturesSection />
+      <Roadmap />
       <Tokenomics />
+      <SocialIcons />
     </div>
   );
 };
