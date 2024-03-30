@@ -1,39 +1,41 @@
-import React from "react";
+import React from 'react';
 
 const Header: React.FC = () => {
   return (
-    <header className="py-4 text-white bg-gray-900 shadow-md">
-      <div className="container flex items-center justify-between px-4 mx-auto md:px-6 lg:px-8">
-        <div className="text-xl font-bold md:text-2xl">
-          <a href="/" className="flex items-center transition duration-150 ease-in-out transform hover:scale-105">
-            <span className="mr-2 text-2xl md:text-3xl">🚀</span>
-            NOMOTA AI
+    <header className="text-white bg-gray-900 shadow-md">
+      <div className="container flex items-center justify-between px-4 py-4 mx-auto">
+        <a href="/" className="flex items-center text-xl font-bold">
+          <span className="mr-2">🚀</span>
+          NOMOTO AI
+        </a>
+        
+        <nav className="hidden space-x-6 text-lg md:flex">
+          <a href="/products" className="p-2 transition duration-150 ease-in-out hover:text-gray-300">
+            Products
           </a>
-        </div>
-        <nav>
-          <ul className="flex space-x-4 md:space-x-8 lg:space-x-12">
-            <li>
-              <a href="/products" className="transition-colors duration-150 hover:text-gray-300">
-                Products
-              </a>
-            </li>
-            <li>
-              <a href="/tokenomics" className="transition-colors duration-150 hover:text-gray-300">
-                Tokenomics
-              </a>
-            </li>
-            <li>
-              <a href="/roadmap" className="transition-colors duration-150 hover:text-gray-300">
-                Roadmap
-              </a>
-            </li>
-            <li>
-              <a href="/documentation" className="transition-colors duration-150 hover:text-gray-300">
-                Documentation
-              </a>
-            </li>
-          </ul>
+          <a href="/tokenomics" className="p-2 transition duration-150 ease-in-out hover:text-gray-300">
+            Tokenomics
+          </a>
+          <a href="/roadmap" className="p-2 transition duration-150 ease-in-out hover:text-gray-300">
+            Roadmap
+          </a>
+          <a href="/documentation" className="p-2 transition duration-150 ease-in-out hover:text-gray-300">
+            Documentation
+          </a>
         </nav>
+
+        <div className="flex items-center space-x-3 md:hidden">
+          <span className="px-2 py-1 text-sm border border-gray-600 rounded">EN</span>
+          <span className="px-2 py-1 text-sm border border-gray-600 rounded">⚙️</span>
+          <span className="px-2 py-1 text-sm border border-gray-600 rounded">👤</span>
+        </div>
+      </div>
+
+      <div className="flex justify-around py-4 text-lg bg-gray-800 border-t border-gray-700 md:hidden">
+        <a href="/news" className="hover:text-gray-300">Products</a>
+        <a href="/staking" className="hover:text-gray-300">Tokenomics</a>
+        <a href="/bridge" className="hover:text-gray-300">Roadmap</a>
+        <a href="/docs" className="hover:text-gray-300">Docs</a>
       </div>
     </header>
   );
