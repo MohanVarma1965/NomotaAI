@@ -26,7 +26,7 @@ const featuresData = [
   {
     title: 'Voice Synthesis',
     description: 'Lifelike voice synthesis.',
-    imageUrl: 'real-time-chat.png',
+    imageUrl: 'voice.png',
     linkUrl: '/products/voice-synthesis',
   },
   {
