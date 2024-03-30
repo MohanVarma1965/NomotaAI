@@ -16,17 +16,17 @@ const milestones: Milestone[] = [
   {
     title: 'Nomota AI staking on Ethereum',
     description: 'Description of Ethereum staking goes here.',
-    iconColor: 'text-red-500',
+    iconColor: 'text-green-500',
   },
   {
     title: 'Nomota AI staking on Ethereum',
     description: 'Description of Ethereum staking goes here.',
-    iconColor: 'text-red-500',
+    iconColor: 'text-green-500',
   },
   {
     title: 'Nomota AI staking on Ethereum',
     description: 'Description of Ethereum staking goes here.',
-    iconColor: 'text-red-500',
+    iconColor: 'text-green-500',
   },
   {
     title: 'Nomota AI staking on Ethereum',
@@ -59,11 +59,12 @@ const Roadmap: React.FC = () => {
         </h2>
         <div className="h-1 bg-red-600 w-full my-5" />
       </div>
-      <div className="flex flex-col md:flex-row md:flex-wrap justify-center md:items-center gap-8 max-w-6xl mx-auto">
+      <div className="flex flex-col md:flex-row md:flex-wrap justify-center md:items-center gap-8 max-w-6xl mx-auto ">
         {milestones.map((milestone, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-sm bg-gray-700 p-4 rounded-md shadow-md space-x-2"
+            className="flex flex-col items-center text-sm bg-gray-700 p-4 rounded-md shadow-md space-x-2 transition-all 
+            duration-300 transform hover:scale-105 hover:border hover:border-red-500"
           >
             <div className="flex items-center space-x-2">
               <CheckCircleIcon className={`h-5 w-5 ${milestone.iconColor}`} />
