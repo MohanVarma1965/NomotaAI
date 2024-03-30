@@ -4,7 +4,7 @@ import OnePlaceTiles from "./OnePlaceTiles";
 import LearnMoreSection from "./LearnMoreSection";
 import Roadmap from "./Roadmap";
 import Tokenomics from "./Tokenomics";
-import FeaturesSection from "./FeaturesSection";
+import FeaturesSection from "../FeaturesSection";
 import SocialIcons from "./SocialIcons";
 
 const Main: React.FC = () => {

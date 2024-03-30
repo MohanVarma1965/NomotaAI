@@ -4,9 +4,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 const Main = lazy(() => import("./components/Main"));
+const Products = lazy(() => import("./components/Products"));
 
-// const About = lazy(() => import("./components/About"));
-// const Dashboard = lazy(() => import("./components/Dashboard"));
+const Staking = lazy(() => import("./components/Products/Staking"));
 
 function App() {
   return (
@@ -15,8 +15,8 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Main />} />
-          {/* <Route path="/about" element={<About />} />
-          <Route path="/dashboard" element={<Dashboard />} /> */}
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/staking" element={<Staking />} />
         </Routes>
       </Suspense>
       <Footer />
