@@ -11,8 +11,7 @@ const Main: React.FC = () => {
     <div>
       <MainPageBanner />
       <OnePlaceTiles />
-      <FeaturesSection />
-      <Roadmap />
+      <FeaturesSection/>
       <LearnMoreSection />
       <Tokenomics />
     </div>

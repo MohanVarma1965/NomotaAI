@@ -1,26 +1,31 @@
 import React from 'react';
 import FeatureTile from './FeatureTile';
+import './FeatureTile.css'; 
 
 const featuresData = [
   {
     title: 'Real-Time Chat',
     description: 'Our bots offer real-time chat assistance.',
-    imageUrl: '/path-to-your-image.jpg', 
+    imageUrl: 'real-time-chat.png', 
+    linkUrl: '/features/real-time-chat', 
   },
   {
     title: 'Image Generation',
     description: 'Innovative image generation.',
-    imageUrl: '/path-to-your-image.jpg', 
+    imageUrl: 'image-generation.webp', 
+    linkUrl: '/features/image-generation', 
   },
   {
     title: 'Voice Synthesis',
     description: 'Lifelike voice synthesis.',
-    imageUrl: '/path-to-your-image.jpg', 
+    imageUrl: 'real-time-chat.png', 
+    linkUrl: '/features/voice-synthesis', 
   },
   {
     title: 'Music Generation',
     description: 'Magic music generation.',
-    imageUrl: '/path-to-your-image.jpg',
+    imageUrl: 'image-generation.webp    ', 
+    linkUrl: '/features/music-generation', 
   },
 ];
 
