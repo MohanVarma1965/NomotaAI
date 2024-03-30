@@ -1,8 +1,8 @@
-import React from "react";
-import { useTitle } from "../Effects";
+import React from 'react';
+import { useTitle } from '../Effects';
 
 const AboutUs: React.FC = () => {
-  useTitle("Nomota AI - Acceptable Use")
+  useTitle('Nomota AI - Acceptable Use');
   return (
     <div>
       <h1>About us</h1>
