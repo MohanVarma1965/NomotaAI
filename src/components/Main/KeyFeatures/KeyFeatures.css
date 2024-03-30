@@ -1,0 +1,120 @@
+@keyframes blink {
+  0%, 100% { background-color: #000; }
+  50% { background-color: #111; }
+}
+
+@keyframes shine {
+  0%, 100% {
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.75);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes blinkBackground {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; } 
+}
+
+.key-features {
+  position: relative;
+  padding: 4rem 1rem;
+  background: #000; 
+  background-size: cover;
+  z-index: 1;
+}
+
+.key-features:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../../assets/dim_background.webp') center center no-repeat;
+  background-size: cover;
+  z-index: -1; 
+  animation: blinkBackground 3s ease-in-out infinite;
+}
+
+.key-features-title {
+  margin-bottom: 2rem;
+  color: #fff7f7;
+  text-align: center;
+  font-size: 2.5rem;
+  animation: float 5s ease-in-out infinite;
+}
+
+.features-grid {
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .features-grid > :nth-child(n+4) {
+    grid-column: span 2 / span 2;
+  }
+}
+
+.feature-card {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  padding: 2rem;
+  color: #fff;
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  overflow: hidden;
+  width: 100%; 
+  max-width: 300px;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+  border-color: #ccc;
+  animation: shine 1s ease-in-out infinite alternate;
+}
+
+.feature-icon {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.feature-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .features-grid:first-of-type {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .features-grid:last-of-type {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
