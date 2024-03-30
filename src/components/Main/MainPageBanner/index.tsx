@@ -9,7 +9,7 @@ const MainPageBanner: React.FC = () => {
           Where technology meets creativity
         </p>
         <div className="mb-8">
-          <span className="block mb-4 text-2xl font-bold">Buy <span className="text-red-600">NomotoAI:</span></span>
+          <span className="block mb-4 text-2xl font-bold">Buy <span className="text-red-600">Nomota AI:</span></span>
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-3">
             <a href="#" className="flex items-center justify-center px-6 py-3 transition-colors duration-300 border border-gray-600 rounded-lg hover:border-green-500 hover:bg-green-500 hover:bg-opacity-25">
               <span>🐍 &nbsp;</span>
