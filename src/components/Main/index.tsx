@@ -3,14 +3,18 @@ import MainPageBanner from "./MainPageBanner";
 import OnePlaceTiles from "./OnePlaceTiles";
 import LearnMoreSection from "./LearnMoreSection";
 import Roadmap from "./Roadmap";
+import Tokenomics from "./Tokenomics";
+import FeaturesSection from "./FeaturesSection";
 
 const Main: React.FC = () => {
   return (
     <div>
       <MainPageBanner />
       <OnePlaceTiles />
-      <LearnMoreSection />
+      <FeaturesSection />
       <Roadmap />
+      <LearnMoreSection />
+      <Tokenomics />
     </div>
   );
 };
