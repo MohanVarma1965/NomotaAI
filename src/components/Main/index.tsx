@@ -2,6 +2,7 @@ import React from "react";
 import MainPageBanner from "./MainPageBanner";
 import OnePlaceTiles from "./OnePlaceTiles";
 import LearnMoreSection from "./LearnMoreSection";
+import Roadmap from "./Roadmap";
 
 const Main: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const Main: React.FC = () => {
       <MainPageBanner />
       <OnePlaceTiles />
       <LearnMoreSection />
+      <Roadmap />
     </div>
   );
 };
