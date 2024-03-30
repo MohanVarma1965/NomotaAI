@@ -1,23 +1,23 @@
-import React, { Suspense, lazy } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import { ScrollToAnchor } from "./components/Effects";
+import React, { Suspense, lazy } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import { ScrollToAnchor } from './components/Effects';
 
-const Main = lazy(() => import("./components/Main"));
-const Products = lazy(() => import("./components/Products"));
+const Main = lazy(() => import('./components/Main'));
+const Products = lazy(() => import('./components/Products'));
 
-const Staking = lazy(() => import("./components/Products/Staking"));
-const ChatBot = lazy(() => import("./components/Products/ChatBot"));
-const MusicGeneration = lazy(() => import("./components/Products/MusicGeneration"));
-const VoiceGeneration = lazy(() => import("./components/Products/VoiceGeneration"));
-const ImageGeneration = lazy(() => import("./components/Products/ImageGeneration"));
-const Marketplace = lazy(() => import("./components/Products/Marketplace"));
+const Staking = lazy(() => import('./components/Products/Staking'));
+const ChatBot = lazy(() => import('./components/Products/ChatBot'));
+const MusicGeneration = lazy(() => import('./components/Products/MusicGeneration'));
+const VoiceGeneration = lazy(() => import('./components/Products/VoiceGeneration'));
+const ImageGeneration = lazy(() => import('./components/Products/ImageGeneration'));
+const Marketplace = lazy(() => import('./components/Products/Marketplace'));
 
-const AboutUs = lazy(() => import("./components/Pages/AboutUs"));
-const AcceptableUse = lazy(() => import("./components/Pages/AcceptableUse"));
-const PrivacyPolicy = lazy(() => import("./components/Pages/PrivacyPolicy"));
-const TermsOfService = lazy(() => import("./components/Pages/TermsOfService"));
+const AboutUs = lazy(() => import('./components/Pages/AboutUs'));
+const AcceptableUse = lazy(() => import('./components/Pages/AcceptableUse'));
+const PrivacyPolicy = lazy(() => import('./components/Pages/PrivacyPolicy'));
+const TermsOfService = lazy(() => import('./components/Pages/TermsOfService'));
 
 function App() {
   return (

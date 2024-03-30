@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 interface Milestone {
   title: string;
@@ -51,6 +53,13 @@ const milestones: Milestone[] = [
 ];
 
 const Roadmap: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
+
   return (
     <div className="bg-white text-white py-12 px-4">
       <div className="text-center mb-8">
@@ -65,6 +74,8 @@ const Roadmap: React.FC = () => {
             key={index}
             className="flex flex-col items-center text-sm bg-gray-700 p-4 rounded-md shadow-md space-x-2 transition-all 
             duration-300 transform hover:scale-105 hover:border hover:border-red-500"
+            data-aos="fade-left"
+            data-aos-delay="100"
           >
             <div className="flex items-center space-x-2">
               <CheckCircleIcon className={`h-5 w-5 ${milestone.iconColor}`} />

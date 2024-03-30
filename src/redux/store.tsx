@@ -1,5 +1,5 @@
 // Importing required functions and utilities from redux toolkit
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore } from '@reduxjs/toolkit';
 // Import the reducer from the slice
 
 // Configure the Redux store and combine all reducers

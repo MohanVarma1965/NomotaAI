@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { CheckCircleIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Tokenomics: React.FC = () => {
   const generateCircle = (percentage: number) => {
@@ -35,15 +37,26 @@ const Tokenomics: React.FC = () => {
     );
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
+
   return (
     <div className="py-12 text-white bg-gradient-to-b from-gray-800 to-gray-900 md:px-4 max-md:p-8">
-      <div className="mb-12 text-center">
+      <div className="mb-12 text-center" data-aos="fade-bottom" data-aos-delay="300">
         <h2 id="tokenomics" className="text-4xl font-bold">
           Tokenomics
         </h2>
       </div>
       <div className="grid max-w-6xl grid-cols-1 gap-6 mx-auto lg:grid-cols-2">
-        <div className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="100"
+          className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105"
+        >
           <h3 className="mb-2 text-2xl font-bold text-center">Liquidity Pool Uniswap</h3>
           <div className="flex justify-center">{generateCircle(75)}</div>
           <div className="flex justify-center mb-4">
@@ -57,7 +70,11 @@ const Tokenomics: React.FC = () => {
           </p>
         </div>
 
-        <div className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="200"
+          className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105"
+        >
           <h3 className="mb-2 text-2xl font-bold text-center">Reserved Liquidity Pool</h3>
           <div className="flex justify-center">{generateCircle(10)}</div>
           <div className="flex justify-center mb-4">
@@ -72,7 +89,11 @@ const Tokenomics: React.FC = () => {
           </p>
         </div>
 
-        <div className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="300"
+          className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105"
+        >
           <h3 className="mb-2 text-2xl font-bold text-center">Allocated for Staking Rewards</h3>
           <div className="flex justify-center">{generateCircle(10)}</div>
           <div className="flex justify-center mb-4">
@@ -86,7 +107,11 @@ const Tokenomics: React.FC = () => {
           </p>
         </div>
 
-        <div className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="400"
+          className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105"
+        >
           <h3 className="mb-2 text-2xl font-bold text-center">Allocated for Investors</h3>
           <div className="flex justify-center">{generateCircle(5)}</div>
           <div className="flex justify-center mb-4">

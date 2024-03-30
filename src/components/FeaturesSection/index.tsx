@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import FeatureTile from './FeatureTile';
 import './FeatureTile.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const featuresData = [
   {
@@ -42,12 +44,25 @@ const featuresData = [
 ];
 
 const FeaturesSection: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
+
   return (
     <div className="py-12 bg-white max-md:p-8">
       <div className="mb-8 text-center">
-        <h2 className="text-3xl font-bold">Our products</h2>
+        <h2 className="text-3xl font-bold" data-aos="fade-right" data-aos-delay="550">
+          Our products
+        </h2>
       </div>
-      <div className="grid max-w-6xl grid-cols-1 gap-8 mx-auto sm:grid-cols-2 lg:grid-cols-3">
+      <div
+        className="grid max-w-6xl grid-cols-1 gap-8 mx-auto sm:grid-cols-2 lg:grid-cols-3"
+        data-aos="fade-left"
+        data-aos-delay="550"
+      >
         {featuresData.map((feature, index) => (
           <FeatureTile key={index} {...feature} />
         ))}

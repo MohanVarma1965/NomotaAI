@@ -18,12 +18,12 @@ module.exports = {
       animation: {
         blink: 'blink 3s ease-in-out infinite',
         float: 'float 5s ease-in-out infinite',
-      }
+      },
     },
   },
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false,
-  
+
   variants: {
     extend: {},
   },
