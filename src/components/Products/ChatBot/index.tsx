@@ -1,13 +1,13 @@
 import React from "react";
 import { useTitle } from "../../Effects";
 
-const Staking: React.FC = () => {
-  useTitle("Nomota AI - Get rewarded for staking your tokens - 7% - 15% APY")
+const Chatbot: React.FC = () => {
+  useTitle("Nomota AI - Meet our advanced chat bot")
   return (
     <div className="py-12 text-center bg-white max-md:p-8">
-      Staking
+      Chatbot
     </div>
   );
 };
 
-export default Staking;
+export default Chatbot;
