@@ -4,7 +4,7 @@ import FooterColumn from "./FooterColumn";
 const Footer: React.FC = () => {
   const footerData = [
     {
-      title: "DEVELOPMENt",
+      title: "DEVELOPMENT",
       links: [
         { name: "Status", url: "https://status.nomota.nl" },
         { name: "Documentation", url: "https://docs.nomota.nl" },
