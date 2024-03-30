@@ -5,7 +5,9 @@ const Header: React.FC = () => {
     <header className="text-white bg-gray-900 shadow-md">
       <div className="container flex items-center justify-between px-4 py-4 mx-auto">
         <a href="/" className="flex items-center text-xl font-bold">
-          <span className="mr-2">🚀</span>
+          <span className="mr-2">
+            <img src="./temp-tiny.png" />
+          </span>
           Nomota AI
         </a>
 
