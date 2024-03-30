@@ -31,11 +31,11 @@ const featuresData = [
 
 const FeaturesSection: React.FC = () => {
   return (
-    <div className="py-12 bg-gray-100">
-      <div className="text-center mb-8">
+    <div className="py-12 bg-gray-100 max-md:p-8">
+      <div className="mb-8 text-center">
         <h2 className="text-3xl font-bold">Our App Features</h2>
       </div>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid max-w-6xl grid-cols-1 gap-8 mx-auto sm:grid-cols-2 lg:grid-cols-4">
         {featuresData.map((feature, index) => (
           <FeatureTile key={index} {...feature} />
         ))}
