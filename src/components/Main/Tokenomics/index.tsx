@@ -1,5 +1,5 @@
 import React from "react";
-import { CheckCircleIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline';
+import { CheckCircleIcon, CurrencyDollarIcon } from "@heroicons/react/24/outline";
 
 const Tokenomics: React.FC = () => {
   const generateCircle = (percentage: number) => {
@@ -9,9 +9,9 @@ const Tokenomics: React.FC = () => {
 
     let strokeColor;
     if (percentage >= 75) {
-      strokeColor = "#10b981"; 
+      strokeColor = "#10b981";
     } else if (percentage >= 50) {
-      strokeColor = "#f59e0b"; 
+      strokeColor = "#f59e0b";
     } else {
       strokeColor = "#ef4444";
     }
@@ -35,34 +35,28 @@ const Tokenomics: React.FC = () => {
     );
   };
 
-
   return (
     <div className="py-12 text-white bg-gradient-to-b from-gray-800 to-gray-900 md:px-4 max-md:p-8">
       <div className="mb-12 text-center">
         <h2 className="text-4xl font-bold">Tokenomics</h2>
       </div>
       <div className="grid max-w-6xl grid-cols-1 gap-6 mx-auto lg:grid-cols-2">
-
         <div className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105">
-          <div className="flex justify-center">
-            {generateCircle(76)}
-          </div>
+          <div className="flex justify-center">{generateCircle(75)}</div>
           <h3 className="mb-2 text-xl font-bold text-center">Liquidity Pool Uniswap</h3>
           <div className="flex justify-center mb-4">
             <CheckCircleIcon className="w-8 h-8 text-green-400" />
           </div>
           <p className="mb-4 font-semibold text-center">Locked for 1 Year</p>
           <p className="leading-relaxed text-md">
-          A substantial majority of our tokens are dedicated to ensuring robust liquidity on Uniswap. This lock-in
+            A substantial majority of our tokens are dedicated to ensuring robust liquidity on Uniswap. This lock-in
             period signifies our commitment to long-term stability and trust, preventing major fluctuations and
             providing a secure trading environment for all users.
-            </p>
+          </p>
         </div>
 
         <div className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105">
-          <div className="flex justify-center">
-            {generateCircle(10)}
-          </div>
+          <div className="flex justify-center">{generateCircle(10)}</div>
           <h3 className="mb-2 text-xl font-bold text-center">Reserved Liquidity Pool</h3>
           <div className="flex justify-center mb-4">
             <CheckCircleIcon className="w-8 h-8 text-green-400" />
@@ -77,39 +71,36 @@ const Tokenomics: React.FC = () => {
         </div>
 
         <div className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105">
-          <div className="flex justify-center">
-            {generateCircle(38)}
-          </div>
+          <div className="flex justify-center">{generateCircle(10)}</div>
           <h3 className="mb-2 text-xl font-bold text-center">Allocated for Staking</h3>
           <div className="flex justify-center mb-4">
             <CurrencyDollarIcon className="w-8 h-8 text-green-400" />
           </div>
           <p className="mb-4 font-semibold text-center">Rewards</p>
           <p className="leading-relaxed text-md">
-          To enrich the Nomota AI experience and incentivize our community, we've allocated 10% of our tokens
+            To enrich the Nomota AI experience and incentivize our community, we've allocated 10% of our tokens
             specifically for staking rewards. This allocation is designed to reward users who invest in the stability
             and growth of our platform, offering a tangible appreciation for their confidence and support. By staking
             their tokens, users not only contribute to the security and robustness of Nomota AI but also earn rewards
             that can be used across our platform, including on bot usage and in our marketplace for VPS and GPU rentals.
-            </p>
+          </p>
         </div>
-        
+
         <div className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105">
-          <div className="flex justify-center">
-            {generateCircle(52)}
-          </div>
+          <div className="flex justify-center">{generateCircle(5)}</div>
           <h3 className="mb-2 text-xl font-bold text-center">Allocated for Investors</h3>
           <div className="flex justify-center mb-4">
             <CheckCircleIcon className="w-8 h-8 text-green-400" />
           </div>
           <p className="mb-4 font-semibold text-center">Vesting Period of 6 weeks</p>
           <p className="leading-relaxed text-md">
-            To enrich the Nomota AI experience and incentivize our community, we've allocated 10% of our tokens specifically for staking rewards. This allocation is designed to reward users who invest in the stability and growth of our platform, offering a tangible appreciation for their confidence and support. By staking
+            To enrich the Nomota AI experience and incentivize our community, we've allocated 10% of our tokens
+            specifically for staking rewards. This allocation is designed to reward users who invest in the stability
+            and growth of our platform, offering a tangible appreciation for their confidence and support. By staking
             their tokens, users not only contribute to the security and robustness of Nomota AI but also earn rewards
             that can be used across our platform, including on bot usage and in our marketplace for VPS and GPU rentals.
           </p>
         </div>
-
       </div>
     </div>
   );
