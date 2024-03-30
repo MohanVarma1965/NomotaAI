@@ -5,7 +5,7 @@ const Roadmap: React.FC = () => {
   return (
     <div className="bg-gray-900 text-white py-12 px-4">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold">Roadmap</h2>
+        <h2 id="roadmap" className="text-3xl font-bold">Roadmap</h2>
         <div className="h-1 bg-red-600 w-full my-5" />
       </div>
       <div className="flex flex-col md:flex-row md:flex-wrap justify-center md:items-center gap-8">

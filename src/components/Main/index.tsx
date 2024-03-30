@@ -6,13 +6,15 @@ import Roadmap from "./Roadmap";
 import Tokenomics from "./Tokenomics";
 import FeaturesSection from "../FeaturesSection";
 import SocialIcons from "./SocialIcons";
+import { useTitle } from "../Effects";
 
 const Main: React.FC = () => {
+  useTitle("Nomota AI - Where technology meets creativity")
   return (
     <div>
       <MainPageBanner />
-      <OnePlaceTiles />
-      <LearnMoreSection />
+      {/* <OnePlaceTiles /> */}
+      {/* <LearnMoreSection /> */}
       <FeaturesSection />
       <Roadmap />
       <Tokenomics />
