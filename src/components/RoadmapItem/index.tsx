@@ -32,7 +32,7 @@ const RoadmapItem: React.FC<RoadmapProps> = ({ title, months }) => {
       data-aos="fade-up"
       data-aos-delay="100"
     >
-      <h2 className="text-xl font-bold text-center">{title}</h2>
+      <h2 className="text-xl font-bold text-left">{title}</h2>
       {months.map((month, index_m) => (
         <div key={index_m} className="space-y-2">
           <h3 className="text-lg font-semibold">{month.title}</h3>
