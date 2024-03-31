@@ -72,18 +72,23 @@ const Marketplace: React.FC = () => {
       <div className="max-w-4xl mx-auto">
         <h1 className="mb-6 text-3xl font-bold md:text-4xl">VPS & GPU Ecosystem</h1>
         <h2 className="mb-8 text-xl font-semibold md:text-2xl">Decentralized computing power</h2>
+
         <p className="mb-6 text-gray-600">
           Welcome to Nomota AI's CPU/GPU Marketplace, a groundbreaking platform where technology meets creativity,
           unlocking unparalleled opportunities for both resource providers and users.
         </p>
-        <p className="mb-6 text-gray-600">
+
+        <p className=" mb-6 text-gray-600">
           Nomota AI's marketplace is built on principles of transparency, efficiency, and mutual benefit. With advanced
           matching algorithms, we ensure that resource seekers are paired with the most suitable providers, guaranteeing
           an optimal balance of performance and cost.
         </p>
-        <img src="/cpu.png" />
+        <div className="flex flex-col items-center justify-center ">
+          <img src="/cpu.png" style={{ maxWidth: '250px', width: '100%' }} alt="CPU" />
+        </div>
+
         <div>
-          <h2 className="mb-8 text-xl font-semibold md:text-2xl">Provide CPU and GPU power</h2>
+          <h2 className="my-8 text-xl font-semibold md:text-2xl">Provide CPU and GPU power</h2>
           <p className="mb-6 text-gray-600">
             For those with spare CPU/GPU capacity, our platform represents a unique opportunity to contribute to the
             creative community while earning rewards. By listing your resources, you become an integral part of a
@@ -104,7 +109,9 @@ const Marketplace: React.FC = () => {
           ))}
         </div>
       </div>
-      <Roadmap />
+      <div className="my-8 flex flex-col items-center justify-center">
+        <Roadmap />
+      </div>
     </div>
   );
 };
