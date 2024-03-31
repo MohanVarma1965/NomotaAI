@@ -8,17 +8,17 @@ const data = [
     title: 'Accessing Resources',
     items: [
       {
-        title: 'Browse and Select',
+        subtitle: 'Browse and Select',
         description:
           'Users start by browsing the marketplace for available CPU and GPU resources. Listings provide detailed specifications, performance ratings, and pricing, enabling users to select the most suitable options for their needs.',
       },
       {
-        title: 'Instant Provisioning',
+        subtitle: 'Instant Provisioning',
         description:
           "Once a selection is made, the resources are provisioned for the user's project almost instantly, thanks to the automated matching and allocation system. This efficiency minimizes downtime and accelerates project timelines.",
       },
       {
-        title: 'Seamless Integration',
+        subtitle: 'Seamless Integration',
         description:
           "The provisioned resources can be seamlessly integrated into the user's workflow, whether they're running complex simulations, rendering high-quality video content, or performing data analysis. Nomota AI's infrastructure ensures compatibility and ease of use.",
       },
@@ -28,17 +28,17 @@ const data = [
     title: 'Pay-As-You-Go Pricing Model',
     items: [
       {
-        title: 'Transparent Costs',
+        subtitle: 'Transparent Costs',
         description:
           'Pricing is straightforward and transparent, based on the amount of computational power used and the duration of usage. This model eliminates the need for significant upfront investments, making high-performance computing accessible to everyone.',
       },
       {
-        title: 'Flexible Usage',
+        subtitle: 'Flexible Usage',
         description:
           "Users have the flexibility to scale their resource consumption up or down based on the project's requirements. This means you pay only for what you use, when you use it, without being locked into long-term contracts or commitments.",
       },
       {
-        title: 'Billing and Payment',
+        subtitle: 'Billing and Payment',
         description: "Payments can be made using Nomota AI's tokens, ETH or USDT.",
       },
     ],
@@ -47,17 +47,17 @@ const data = [
     title: 'Benefits of the Pay-As-You-Go Model',
     items: [
       {
-        title: 'Cost-Effective',
+        subtitle: 'Cost-Effective',
         description:
           'This model allows users to manage their computing costs more effectively, aligning expenses with project budgets and avoiding wasted resources.',
       },
       {
-        title: 'Scalability',
+        subtitle: 'Scalability',
         description:
           'It offers the ability to quickly adjust to changing computational needs, providing the agility to respond to project demands without the constraints of fixed resources.',
       },
       {
-        title: 'Accessibility',
+        subtitle: 'Accessibility',
         description:
           'By lowering the barrier to entry for high-performance computing, the pay-as-you-go model opens up new possibilities for innovation and creativity across various fields.',
       },
