@@ -5,12 +5,12 @@ import 'aos/dist/aos.css';
 
 interface RoadmapProps {
   title: string;
-  months: Array<MonthProps>;
+  months: MonthProps[];
 }
 
 interface MonthProps {
   title: string;
-  milestones: Array<MilestoneProps>;
+  milestones: MilestoneProps[];
 }
 
 interface MilestoneProps {
@@ -18,35 +18,32 @@ interface MilestoneProps {
   iconColor: string;
 }
 
-const RoadmapItem: React.FC<RoadmapProps> = (item) => {
+const RoadmapItem: React.FC<RoadmapProps> = ({ title, months }) => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: false,
+      once: true,
     });
   }, []);
 
   return (
     <div
-      className="flex flex-col items-center text-sm bg-gray-700 p-4 rounded-md shadow-md space-x-2 transition-all 
-            duration-300 transform hover:scale-105 hover:border hover:border-red-500"
-      data-aos="fade-left"
+      className="w-full max-w-md p-6 space-y-4 text-white bg-gray-800 rounded-lg shadow-lg"
+      data-aos="fade-up"
       data-aos-delay="100"
     >
-      <div className="flex items-center space-x-2">
-        <h2>{item.title}</h2>
-        {item.months.map((month, index_m) => (
-          <div key={index_m}>
-            <h3>{month.title}</h3>
-            {month.milestones.map((milestone, index_ms) => (
-              <div key={index_ms}>
-                <CheckCircleIcon className={`h-5 w-5 text-${milestone.iconColor}-500`} />
-                <span>{milestone.description}</span>
-              </div>
-            ))}
-          </div>
-        ))}
-      </div>
+      <h2 className="text-xl font-bold text-center">{title}</h2>
+      {months.map((month, index_m) => (
+        <div key={index_m} className="space-y-2">
+          <h3 className="text-lg font-semibold">{month.title}</h3>
+          {month.milestones.map((milestone, index_ms) => (
+            <div key={index_ms} className="flex items-center space-x-2">
+              <CheckCircleIcon className={`h-5 w-5 ${milestone.iconColor}`} />
+              <span className="flex-1">{milestone.description}</span>
+            </div>
+          ))}
+        </div>
+      ))}
     </div>
   );
 };
