@@ -27,7 +27,7 @@
     margin-bottom: 1rem;
   }
   
-  .main-banner-subtitle {
+  /* .main-banner-subtitle {
     font-size: 1.5rem;
     color: #9fa6b2;
     margin-bottom: 2rem;
@@ -35,11 +35,56 @@
     border-right: 2px solid rgba(255, 255, 255, 0.75);
     padding-right: 0.5em;
     
-  }
+  } */
 
-  @media (min-width: 768px){
+  /* @media (min-width: 768px){
     .main-banner-subtitle{
         white-space: nowrap;
         animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite; 
     }
+  } */
+
+  
+  .typing-animation {
+    display: inline-block; 
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    padding-right: 0.5em;
+    overflow: hidden;
   }
+  @media (min-width: 768px) {
+    .typing-animation {
+      white-space: nowrap; 
+      animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+    }
+  }
+
+  .button {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid black;
+  }
+  .button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    border-radius: 0.5rem;
+    opacity: 0;
+    transition: background-color 300ms ease, opacity 300ms ease;
+    cursor: not-allowed;
+    pointer-events: none;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .button:hover .overlay {
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 1; 
+    pointer-events: all;
+  }  

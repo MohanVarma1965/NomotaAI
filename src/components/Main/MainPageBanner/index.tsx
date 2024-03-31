@@ -9,7 +9,7 @@ const MainPageBanner: React.FC = () => {
           Nomota AI - where technology meets creativity
         </h1>
         <p className="main-banner-subtitle max-w-xl mb-6 text-md md:text-xl text-gray-400">
-          The crypto ecosystem for boundless innovation
+          <span className="typing-animation">The crypto ecosystem for boundless innovation</span>
         </p>
         <div className="mb-8">
           <span className="block mb-4 text-2xl font-bold">
@@ -19,34 +19,19 @@ const MainPageBanner: React.FC = () => {
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-3">
             <a
               href="https://app.uniswap.org/swap"
-              className="flex items-center justify-center px-3 py-3 transition-colors duration-300 border border-gray-600 rounded-lg hover:border-pink-500 hover:bg-pink-500 hover:bg-opacity-25"
+              className="flex items-center justify-center px-3 py-3  duration-300 border border-gray-600 rounded-lg hover:border-pink-500 hover:bg-pink-500 hover:bg-opacity-25"
             >
               <span>🦄 &nbsp;</span>
               <span className="text-xs sm:text-sm">Uniswap</span>
             </a>
             <a
               href="#"
-              className="relative flex items-center justify-center px-3 py-3 transition-all duration-300 border border-gray-600 rounded-lg group overflow-hidden"
-              style={{ textDecoration: 'none' }}
+              className="banner-button relative flex items-center justify-center px-3 py-3 border border-gray-600 rounded-lg transition-all duration-300 group hover:border-green-500 "
             >
-              <span style={{ transition: 'opacity 300ms' }} className="z-10 group-hover:opacity-10">
-                <img src="/mexc.jpeg" style={{ maxHeight: '50px', height: '100%' }} />
-              </span>
-              <span
-                className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100"
-                style={{
-                  transition: 'opacity 300ms',
-                  color: 'red',
-                  fontWeight: 900,
-                  backgroundColor: 'rgba(0, 0, 0, 0.15)',
-                  padding: '0.5rem 1rem',
-                  borderRadius: '0.5rem',
-                  pointerEvents: 'none',
-                  transform: 'scale(1.05)',
-                }}
-              >
+              <img src="/mexc.jpeg" style={{ maxHeight: '50px', height: '100%' }} />
+              <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 cursor-not-allowed text-white">
                 Coming Soon
-              </span>
+              </div>
             </a>
           </div>
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-2">
