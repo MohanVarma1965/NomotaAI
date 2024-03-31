@@ -1,9 +1,8 @@
-
 import React from 'react';
 
 const MainPageBanner: React.FC = () => {
   return (
-    <div className="py-16 mx-auto text-white bg-gray-800 md:px-4 max-md:p-8 md:container md:text-gray-900 md:bg-white md:flex md:items-center md:justify-between">
+    <div className="py-16 mx-auto text-gray-900 md:px-4 max-md:p-8 md:container md:flex md:items-center md:justify-between">
       <div className="md:flex-1 md:pr-12">
         <h1 className="mb-6 text-[2.5rem] md:text-5xl font-bold leading-tight">
           The crypto ecosystem for boundless innovation
@@ -46,7 +45,6 @@ const MainPageBanner: React.FC = () => {
               </span>
             </a>
 
-
             <a
               href="#"
               className="relative flex items-center justify-center px-3 py-3 transition-all duration-300 border border-gray-600 rounded-lg group overflow-hidden"
@@ -70,15 +68,13 @@ const MainPageBanner: React.FC = () => {
               >
                 Coming Soon
               </span>
-
             </a>
           </div>
         </div>
       </div>
 
-      <div className="main-banner-image flex-1 hidden lg:block">
+      <div className="main-banner-image flex-1 lg:block">
         <img src="./picture.png" alt="Crypto" className="w-full h-auto" />
-
       </div>
     </div>
   );
