@@ -7,7 +7,7 @@ const AcceptableUse: React.FC = () => {
   return (
     <div className="p-6 py-12 text-gray-800 bg-white sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <h1 className="mb-6 text-3xl font-bold text-center md:text-4xl">Acceptable Use Policy</h1>
+        <h1 className="mb-6 text-3xl font-bold md:text-4xl">Acceptable Use Policy</h1>
         
         <p className="mb-4 text-lg">
           Nomota AI takes the responsible use of our platform and the protection of our users' data very seriously.
