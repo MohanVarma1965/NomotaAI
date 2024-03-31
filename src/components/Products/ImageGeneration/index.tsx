@@ -5,64 +5,75 @@ import Roadmap from './Roadmap';
 const ImageGeneration: React.FC = () => {
   useTitle('Nomota AI - Generate any image by just describing it');
   return (
-    <div className="py-12 text-center bg-white max-md:p-8">
-      <h1>Image Generation: Beta Phase</h1>
-      <p>
-        Welcome to the beta phase of Nomota AI's Image Generation, an innovative platform where creativity meets
-        cutting-edge technology. Our Image Generation tool is designed to transform your ideas into visual masterpieces
-        with just a few clicks. As we fine-tune our algorithms and user experience, we invite you to explore the vast
-        possibilities of AI-powered creativity during this beta phase. Please note that certain features and
-        capabilities are currently being optimized for a future full-scale launch.
-      </p>
-      <img src="/image.png" />
-      <h2>Key Features</h2>
-      <p>
-        Our Image Generation platform offers a suite of features designed to cater to artists, designers, and anyone
-        looking to bring their creative visions to life. These include:
-      </p>
-      <div>
-        <h3>High-Quality Image Creation</h3>
-        <p>Generate stunning images in high resolution, perfect for a range of creative projects.</p>
-        <h3>Versatile Styles and Themes</h3>
-        <p>
-          Whether you're into digital art, classic styles, or something entirely unique, our tool adapts to your
-          creative needs.
+    <div className="p-8 py-12 text-gray-800 bg-white sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="mb-6 text-3xl font-bold md:text-4xl">Image Generation: Beta Phase</h1>
+        <p className="mb-6 text-gray-600">
+          Welcome to the beta phase of Nomota AI's Image Generation, an innovative platform where creativity meets
+          cutting-edge technology. Our Image Generation tool is designed to transform your ideas into visual
+          masterpieces with just a few clicks. As we fine-tune our algorithms and user experience, we invite you to
+          explore the vast possibilities of AI-powered creativity during this beta phase. Please note that certain
+          features and capabilities are currently being optimized for a future full-scale launch.
         </p>
-        <h3>Intuitive Interface</h3>
-        <p>
-          Our user-friendly interface makes creating artwork accessible to everyone, regardless of their technical skill
-          level.
-        </p>
-        <h3>Fast Processing Times</h3>
-        <p>Experience rapid generation times, allowing you to bring your ideas to life almost instantly.</p>
-        <h3>Customization Options</h3>
-        <p>
-          Tweak and refine your creations with various customization options, ensuring the final output is exactly as
-          you envisioned.
-        </p>
-      </div>
 
-      <h2>Beta Limitations</h2>
-      <p>
-        During the beta phase of Nomota AI's Image Generation, we're implementing temporary limitations to ensure the
-        stability and performance of our service:
-      </p>
-      <div>
-        <h3>Daily Usage Limit</h3>
-        <p>
-          Users are limited to generating a certain number of 10 images per day, helping us manage the load on our
-          servers effectively.
+        <div className="flex flex-col items-center justify-center ">
+          <img src="/image.png" style={{ maxWidth: '250px', width: '100%' }} alt="Art image" />
+        </div>
+        <h2 className="my-8 text-xl font-bold md:text-2xl">Key Features</h2>
+        <p className="mb-6 text-gray-600">
+          Our Image Generation platform offers a suite of features designed to cater to artists, designers, and anyone
+          looking to bring their creative visions to life. These include:
         </p>
-        <h3>Interaction Cap</h3>
-        <p>
-          To provide all users with a smooth and responsive experience, we've set a cap on the number of interactions
-          per session.
+        <div>
+          <h3 className="mb-3 text-xl font-semibold">High-Quality Image Creation</h3>
+          <p className="mb-6 text-gray-600">
+            Generate stunning images in high resolution, perfect for a range of creative projects.
+          </p>
+          <h3 className="mb-3 text-xl font-semibold">Versatile Styles and Themes</h3>
+          <p className="mb-6 text-gray-600">
+            Whether you're into digital art, classic styles, or something entirely unique, our tool adapts to your
+            creative needs.
+          </p>
+          <h3 className="mb-3 text-xl font-semibold">Intuitive Interface</h3>
+          <p className="mb-6 text-gray-600">
+            Our user-friendly interface makes creating artwork accessible to everyone, regardless of their technical
+            skill level.
+          </p>
+          <h3 className="mb-3 text-xl font-semibold">Fast Processing Times</h3>
+          <p className="mb-6 text-gray-600">
+            Experience rapid generation times, allowing you to bring your ideas to life almost instantly.
+          </p>
+          <h3 className="mb-3 text-xl font-semibold">Customization Options</h3>
+          <p className="mb-6 text-gray-600">
+            Tweak and refine your creations with various customization options, ensuring the final output is exactly as
+            you envisioned.
+          </p>
+        </div>
+        <div className="my-8 flex flex-col items-center justify-center">
+          <Roadmap />
+        </div>
+        <h2 className="my-8 text-xl font-bold md:text-2xl">Beta Limitations</h2>
+        <p className="mb-6 text-gray-600">
+          During the beta phase of Nomota AI's Image Generation, we're implementing temporary limitations to ensure the
+          stability and performance of our service:
         </p>
-        <p>
-          These limitations are in place to guarantee every user benefits from high-quality image generation as we
-          continue to improve and scale our services. Your feedback during this beta phase is invaluable to us, helping
-          shape the future of Nomota AI's Image Generation.
-        </p>
+        <div>
+          <h3 className="mb-3 text-xl font-semibold">Daily Usage Limit</h3>
+          <p className="mb-6 text-gray-600">
+            Users are limited to generating a certain number of 10 images per day, helping us manage the load on our
+            servers effectively.
+          </p>
+          <h3 className="mb-3 text-xl font-semibold">Interaction Cap</h3>
+          <p className="mb-6 text-gray-600">
+            To provide all users with a smooth and responsive experience, we've set a cap on the number of interactions
+            per session.
+          </p>
+          <p className="mb-6 text-gray-600">
+            These limitations are in place to guarantee every user benefits from high-quality image generation as we
+            continue to improve and scale our services. Your feedback during this beta phase is invaluable to us,
+            helping shape the future of Nomota AI's Image Generation.
+          </p>
+        </div>
       </div>
     </div>
   );
