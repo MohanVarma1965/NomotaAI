@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTitle } from '../../Effects';
+import Roadmap from './Roadmap';
 
 const Chatbot: React.FC = () => {
   useTitle('Nomota AI - Meet our advanced chat bot');
@@ -85,6 +86,7 @@ const Chatbot: React.FC = () => {
           when technology meets creativity.
         </p>
       </div>
+      <Roadmap />
       <div>
         <h1>Beta Phase</h1>
         <p>

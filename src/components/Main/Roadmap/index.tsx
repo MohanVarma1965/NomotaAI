@@ -1,6 +1,12 @@
 import React, { useEffect } from 'react';
-import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import AOS from 'aos';
+import ChatBotRoadmap from '../../Products/ChatBot/Roadmap';
+import ImageGenerationRoadmap from '../../Products/ImageGeneration/Roadmap';
+import MarketplaceRoadmap from '../../Products/Marketplace/Roadmap';
+import MusicGenerationRoadmap from '../../Products/MusicGeneration/Roadmap';
+import StakingRoadmap from '../../Products/Staking/Roadmap';
+import VoiceGenerationRoadmap from '../../Products/VoiceGeneration/Roadmap';
+
 import 'aos/dist/aos.css';
 
 interface Milestone {
@@ -8,49 +14,6 @@ interface Milestone {
   description: string;
   iconColor: string;
 }
-
-const milestones: Milestone[] = [
-  {
-    title: 'Nomota AI staking on BNB Chain',
-    description: 'Description of BNB Chain staking goes here.',
-    iconColor: 'text-green-500',
-  },
-  {
-    title: 'Nomota AI staking on Ethereum',
-    description: 'Description of Ethereum staking goes here.',
-    iconColor: 'text-green-500',
-  },
-  {
-    title: 'Nomota AI staking on Ethereum',
-    description: 'Description of Ethereum staking goes here.',
-    iconColor: 'text-green-500',
-  },
-  {
-    title: 'Nomota AI staking on Ethereum',
-    description: 'Description of Ethereum staking goes here.',
-    iconColor: 'text-green-500',
-  },
-  {
-    title: 'Nomota AI staking on Ethereum',
-    description: 'Description of Ethereum staking goes here.',
-    iconColor: 'text-red-500',
-  },
-  {
-    title: 'Nomota AI staking on Ethereum',
-    description: 'Description of Ethereum staking goes here.',
-    iconColor: 'text-red-500',
-  },
-  {
-    title: 'Nomota AI staking on Ethereum',
-    description: 'Description of Ethereum staking goes here.',
-    iconColor: 'text-red-500',
-  },
-  {
-    title: 'Nomota AI staking on Ethereum',
-    description: 'Description of Ethereum staking goes here.',
-    iconColor: 'text-red-500',
-  },
-];
 
 const Roadmap: React.FC = () => {
   useEffect(() => {
@@ -64,12 +27,19 @@ const Roadmap: React.FC = () => {
     <div className="bg-white text-white py-12 px-4">
       <div className="text-center mb-8">
         <h2 id="roadmap" className="text-3xl font-bold text-black">
-          Roadmap
+          Roadmaps
         </h2>
         <div className="h-1 bg-red-600 w-full my-5" />
       </div>
       <div className="flex flex-col md:flex-row md:flex-wrap justify-center md:items-center gap-8 max-w-6xl mx-auto ">
-        {milestones.map((milestone, index) => (
+        <ChatBotRoadmap />
+        <ImageGenerationRoadmap />
+        <MarketplaceRoadmap />
+        <MusicGenerationRoadmap />
+        <StakingRoadmap />
+        <VoiceGenerationRoadmap />
+
+        {/* {milestones.map((milestone, index) => (
           <div
             key={index}
             className="flex flex-col items-center text-sm bg-gray-700 p-4 rounded-md shadow-md space-x-2 transition-all 
@@ -83,7 +53,7 @@ const Roadmap: React.FC = () => {
             </div>
             <p className="mt-2">{milestone.description}</p>
           </div>
-        ))}
+        ))} */}
       </div>
     </div>
   );

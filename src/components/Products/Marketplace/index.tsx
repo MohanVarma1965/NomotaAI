@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTitle } from '../../Effects';
 import MarketPlaceItem from './MarketPlaceItem';
+import Roadmap from './Roadmap';
 
 const data = [
   {
@@ -102,6 +103,7 @@ const Marketplace: React.FC = () => {
           <MarketPlaceItem {...item} />
         ))}
       </div>
+      <Roadmap />
     </div>
   );
 };
