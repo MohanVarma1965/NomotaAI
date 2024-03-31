@@ -2,7 +2,9 @@ import React, { useEffect } from 'react';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import './Roadmap.css'
 
+export type IconColor = 'green' | 'orange' | 'red';
 interface RoadmapProps {
   title: string;
   months: MonthProps[];
@@ -15,7 +17,7 @@ interface MonthProps {
 
 interface MilestoneProps {
   description: string;
-  iconColor: string;
+  iconColor: IconColor;
 }
 
 const RoadmapItem: React.FC<RoadmapProps> = ({ title, months }) => {
@@ -25,6 +27,11 @@ const RoadmapItem: React.FC<RoadmapProps> = ({ title, months }) => {
       once: true,
     });
   }, []);
+  const colorClassMap = {
+    green: 'text-green-500',
+    orange: 'text-orange-500',
+    red: 'text-red-500',
+  };
 
   return (
     <div
@@ -38,9 +45,9 @@ const RoadmapItem: React.FC<RoadmapProps> = ({ title, months }) => {
           <h3 className="text-lg font-semibold">{month.title}</h3>
           {month.milestones.map((milestone, index_ms) => (
             <div key={index_ms} className="flex items-center space-x-2">
-              <CheckCircleIcon className={`h-5 w-5 text-${milestone.iconColor}-500`} />
-              <span className="flex-1">{milestone.description}</span>
-            </div>
+            <CheckCircleIcon className={`h-5 w-5 ${colorClassMap[milestone.iconColor] || 'text-current'}`} />
+            <span className="flex-1">{milestone.description}</span>
+          </div>
           ))}
         </div>
       ))}

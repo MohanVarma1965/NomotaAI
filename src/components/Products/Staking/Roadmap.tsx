@@ -1,6 +1,6 @@
 import React from 'react';
 import RoadmapItem from '../../RoadmapItem';
-
+import {IconColor} from '../../RoadmapItem/index'
 const roadmap = {
   title: 'Staking roadmap',
   months: [
@@ -8,11 +8,11 @@ const roadmap = {
       title: 'April 2024',
       milestones: [
         {
-          iconColor: 'orange',
+          iconColor: 'orange' as IconColor,
           description: 'Launch of staking platform',
         },
         {
-          iconColor: 'green',
+          iconColor: 'green' as IconColor,
           description: 'Buy/Sell tax auto deposit in staking rewards',
         },
       ],
@@ -21,7 +21,7 @@ const roadmap = {
       title: 'June 2024',
       milestones: [
         {
-          iconColor: 'red',
+          iconColor: 'red' as IconColor,
           description: 'Adding 3rd staking pool',
         },
       ],

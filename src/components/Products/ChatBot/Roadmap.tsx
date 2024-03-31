@@ -1,6 +1,6 @@
 import React from 'react';
 import RoadmapItem from '../../RoadmapItem';
-
+import {IconColor} from '../../RoadmapItem/index'
 const roadmap = {
   title: 'Roadmap for our Chat bot',
   months: [
@@ -8,19 +8,19 @@ const roadmap = {
       title: 'April 2024',
       milestones: [
         {
-          iconColor: 'green',
+          iconColor: 'green' as IconColor,
           description: 'Beta launch',
         },
         {
-          iconColor: 'green',
+          iconColor: 'green' as IconColor,
           description: 'Integrated on status page',
         },
         {
-          iconColor: 'orange',
+          iconColor: 'orange' as IconColor,
           description: 'Conversation history',
         },
         {
-          iconColor: 'red',
+          iconColor: 'red' as IconColor,
           description: 'Premium service for stakers',
         },
       ],
@@ -29,11 +29,11 @@ const roadmap = {
       title: 'May 2024',
       milestones: [
         {
-          iconColor: 'red',
+          iconColor: 'red' as IconColor,
           description: 'Official release of version 1',
         },
         {
-          iconColor: 'red',
+          iconColor: 'red' as IconColor,
           description: 'Improved language model',
         },
       ],

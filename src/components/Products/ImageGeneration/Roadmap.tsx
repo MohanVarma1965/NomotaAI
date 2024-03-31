@@ -1,6 +1,6 @@
 import React from 'react';
 import RoadmapItem from '../../RoadmapItem';
-
+import {IconColor} from '../../RoadmapItem/index'
 const roadmap = {
   title: 'Roadmap for Image generation',
   months: [
@@ -8,23 +8,23 @@ const roadmap = {
       title: 'April 2024',
       milestones: [
         {
-          iconColor: 'green',
+          iconColor: 'green' as IconColor,
           description: 'Beta launch',
         },
         {
-          iconColor: 'green',
+          iconColor: 'green' as IconColor,
           description: 'Integrated on status page',
         },
         {
-          iconColor: 'green',
+          iconColor: 'green' as IconColor,
           description: 'Single image requests',
         },
         {
-          iconColor: 'orange',
+          iconColor: 'orange' as IconColor,
           description: 'Upgrade of quality',
         },
         {
-          iconColor: 'orange',
+          iconColor: 'orange' as IconColor,
           description: 'Premium service for stakers',
         },
       ],
@@ -33,15 +33,15 @@ const roadmap = {
       title: 'May 2024',
       milestones: [
         {
-          iconColor: 'red',
+          iconColor: 'red' as IconColor,
           description: 'Official release of version 1',
         },
         {
-          iconColor: 'red',
+          iconColor: 'red' as IconColor,
           description: 'Conversational image generation',
         },
         {
-          iconColor: 'red',
+          iconColor: 'red' as IconColor,
           description: 'Upload image as base model',
         },
       ],

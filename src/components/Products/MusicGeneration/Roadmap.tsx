@@ -1,6 +1,6 @@
 import React from 'react';
 import RoadmapItem from '../../RoadmapItem';
-
+import {IconColor} from '../../RoadmapItem/index'
 const roadmap = {
   title: 'Roadmap for Music Generation',
   months: [
@@ -8,15 +8,15 @@ const roadmap = {
       title: 'May 2024',
       milestones: [
         {
-          iconColor: 'orange',
+          iconColor: 'orange' as IconColor,
           description: 'Beta launch',
         },
         {
-          iconColor: 'orange',
+          iconColor: 'orange' as IconColor,
           description: 'Conversation history',
         },
         {
-          iconColor: 'red',
+          iconColor: 'red' as IconColor,
           description: 'Premium service for stakers',
         },
       ],
@@ -25,7 +25,7 @@ const roadmap = {
       title: 'June 2024',
       milestones: [
         {
-          iconColor: 'red',
+          iconColor: 'red' as IconColor,
           description: 'Official release of version 1',
         },
       ],
