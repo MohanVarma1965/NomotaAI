@@ -15,6 +15,15 @@ const ImageGeneration: React.FC = () => {
           explore the vast possibilities of AI-powered creativity during this beta phase. Please note that certain
           features and capabilities are currently being optimized for a future full-scale launch.
         </p>
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-3">
+          <a
+            href="https://t.me/nomotaimgbot"
+            target="_blank"
+            className="flex items-center justify-center px-3 py-3 transition-colors duration-300 border border-gray-600 rounded-lg hover:border-pink-500 hover:bg-pink-500 hover:bg-opacity-25"
+          >
+            Try our image bot right now
+          </a>
+        </div>
 
         <div className="flex flex-col items-center justify-center ">
           <img src="/image.png" style={{ maxWidth: '250px', width: '100%' }} alt="Art image" />

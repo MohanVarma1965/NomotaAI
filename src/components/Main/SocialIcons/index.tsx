@@ -15,7 +15,7 @@ const SocialIcons: React.FC = () => {
         </svg>
       </a>
 
-      <a href="https://t.me/nomotagptbot" className="transition-colors duration-200 hover:text-blue-500">
+      {/* <a href="https://t.me/nomotaai_portal" className="transition-colors duration-200 hover:text-blue-500">
         <svg
           aria-label="Telegram"
           className="w-6 h-6 fill-current"
@@ -25,19 +25,7 @@ const SocialIcons: React.FC = () => {
         >
           <path d="M9.036 15.464l-.932 3.285c-.096.337.418.478.622.2l1.27-1.74 2.457 1.827c.418.313.774.2.905-.295l3.38-15.112c.13-.496-.291-.713-.62-.498L.725 9.607c-.497.238-.498.498-.025.635l3.3 1.054 7.338-4.595c.335-.21.64-.04.283.04z" />
         </svg>
-      </a>
-
-      <a href="https://discord.gg/invitecode" className="transition-colors duration-200 hover:text-indigo-500">
-        <svg
-          aria-label="Discord"
-          className="w-6 h-6 fill-current"
-          role="img"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M19.839 0h-15.678c-2.291 0-4.161 1.87-4.161 4.161v15.678c0 2.291 1.87 4.161 4.161 4.161h15.678c2.291 0 4.161-1.87 4.161-4.161v-15.678c0-2.291-1.87-4.161-4.161-4.161zM16.161 14.839c-1.243 0-2.25-1.008-2.25-2.25s1.007-2.25 2.25-2.25 2.25 1.008 2.25 2.25-1.007 2.25-2.25 2.25zM7.839 14.839c-1.243 0-2.25-1.008-2.25-2.25s1.007-2.25 2.25-2.25 2.25 1.008 2.25 2.25-1.007 2.25-2.25 2.25z" />
-        </svg>
-      </a>
+      </a> */}
     </div>
   );
 };
