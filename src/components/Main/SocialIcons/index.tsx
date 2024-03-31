@@ -3,7 +3,7 @@ import React from 'react';
 const SocialIcons: React.FC = () => {
   return (
     <div className="flex justify-center p-8 space-x-8">
-      <a href="https://twitter.com/handle" className="transition-colors duration-200 hover:text-blue-400">
+      <a href="https://twitter.com/nomotaai" className="transition-colors duration-200 hover:text-blue-400">
         <svg
           aria-label="Twitter"
           className="w-6 h-6 fill-current"
@@ -15,7 +15,7 @@ const SocialIcons: React.FC = () => {
         </svg>
       </a>
 
-      <a href="https://t.me/handle" className="transition-colors duration-200 hover:text-blue-500">
+      <a href="https://t.me/nomotagptbot" className="transition-colors duration-200 hover:text-blue-500">
         <svg
           aria-label="Telegram"
           className="w-6 h-6 fill-current"
