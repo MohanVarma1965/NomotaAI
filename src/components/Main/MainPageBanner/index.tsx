@@ -95,7 +95,7 @@ const MainPageBanner: React.FC = () => {
         </div>
       </div>
       <div className="main-banner-image flex-1 lg:block">
-        <img src="./picture.png" alt="Crypto" className="w-full h-auto" />
+        <img src="/homepage.png" alt="Crypto" className="w-full h-auto" />
       </div>
     </div>
   );
