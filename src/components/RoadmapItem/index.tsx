@@ -38,7 +38,7 @@ const RoadmapItem: React.FC<RoadmapProps> = ({ title, months }) => {
           <h3 className="text-lg font-semibold">{month.title}</h3>
           {month.milestones.map((milestone, index_ms) => (
             <div key={index_ms} className="flex items-center space-x-2">
-              <CheckCircleIcon className={`h-5 w-5 ${milestone.iconColor}`} />
+              <CheckCircleIcon className={`h-5 w-5 text-${milestone.iconColor}-500`} />
               <span className="flex-1">{milestone.description}</span>
             </div>
           ))}
