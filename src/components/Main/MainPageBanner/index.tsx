@@ -27,7 +27,7 @@ const MainPageBanner: React.FC = () => {
           The crypto ecosystem for boundless innovation
         </h1>
         <p className="main-banner-subtitle max-w-xl mb-6 text-xl md:text-2xl text-gray-400">
-          {subTitle}
+          <span className="typing-animation">{subTitle}</span>
         </p>
         <div className="mb-8">
           <span className="block mb-4 text-2xl font-bold">
@@ -37,60 +37,23 @@ const MainPageBanner: React.FC = () => {
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-3">
             <a
               href="#"
-              className="flex items-center justify-center px-3 py-3 transition-colors duration-300 border border-gray-600 rounded-lg hover:border-pink-500 hover:bg-pink-500 hover:bg-opacity-25"
+              className="flex items-center justify-center px-3 py-3  duration-300 border border-gray-600 rounded-lg hover:border-pink-500 hover:bg-pink-500 hover:bg-opacity-25"
             >
               <span>🦄 &nbsp;</span>
               <span className="text-xs sm:text-sm">Uniswap</span>
             </a>
-            <a
-              href="#"
-              className="relative flex items-center justify-center px-3 py-3 transition-all duration-300 border border-gray-600 rounded-lg group overflow-hidden"
-              style={{ textDecoration: 'none' }}
-            >
-              <span style={{ transition: 'opacity 300ms' }} className="z-10 group-hover:opacity-50">
-                🥞 &nbsp;
-                <span className="text-xs sm:text-sm">PancakeSwap</span>
-              </span>
-              <span
-                className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100"
-                style={{
-                  transition: 'opacity 300ms',
-                  color: 'white',
-                  backgroundColor: 'rgba(0, 0, 0, 0.75)',
-                  padding: '0.5rem 1rem',
-                  borderRadius: '0.5rem',
-                  pointerEvents: 'none',
-                  transform: 'scale(1.05)',
-                }}
-              >
-                Coming Soon
-              </span>
-            </a>
-
-            <a
-              href="#"
-              className="relative flex items-center justify-center px-3 py-3 transition-all duration-300 border border-gray-600 rounded-lg group overflow-hidden"
-              style={{ textDecoration: 'none' }}
-            >
-              <span style={{ transition: 'opacity 300ms' }} className="z-10 group-hover:opacity-50">
-                🐍 &nbsp;
-                <span className="text-xs sm:text-sm">KuCoin</span>
-              </span>
-              <span
-                className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100"
-                style={{
-                  transition: 'opacity 300ms',
-                  color: 'white',
-                  backgroundColor: 'rgba(0, 0, 0, 0.75)',
-                  padding: '0.5rem 1rem',
-                  borderRadius: '0.5rem',
-                  pointerEvents: 'none',
-                  transform: 'scale(1.05)',
-                }}
-              >
-                Coming Soon
-              </span>
-            </a>
+            <a href="#" className="banner-button relative flex items-center justify-center px-3 py-3 border border-gray-600 rounded-lg hover:border-yellow-500 transition-all duration-300 group">
+            <span>🥞 PancakeSwap</span>
+            <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 cursor-not-allowed text-white">
+              Coming Soon
+            </div>
+          </a>
+          <a href="#" className="banner-button relative flex items-center justify-center px-3 py-3 border border-gray-600 rounded-lg transition-all duration-300 group hover:border-green-500 ">
+            <span>🐍 KuCoin</span>
+            <div className="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 cursor-not-allowed text-white">
+              Coming Soon
+            </div>
+          </a>
           </div>
         </div>
       </div>
