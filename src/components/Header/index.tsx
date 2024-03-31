@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (
@@ -7,7 +7,7 @@ const Header: React.FC = () => {
       <div className="container flex items-center justify-between px-4 py-4 mx-auto">
         <Link to="/" className="flex items-center text-xl font-bold">
           <span className="mr-2">
-            <img src="./logo-xs.png" />
+            <img src="/logo-xs.png" />
           </span>
           Nomota AI
         </Link>
@@ -22,7 +22,11 @@ const Header: React.FC = () => {
           <Link to="/#roadmap" className="p-2 transition duration-150 ease-in-out hover:text-gray-300">
             Roadmap
           </Link>
-          <a href="https://docs.nomota.nl" target="_blank" className="p-2 transition duration-150 ease-in-out hover:text-gray-300">
+          <a
+            href="https://docs.nomota.nl"
+            target="_blank"
+            className="p-2 transition duration-150 ease-in-out hover:text-gray-300"
+          >
             Documentation
           </a>
         </nav>
@@ -44,7 +48,11 @@ const Header: React.FC = () => {
         <a href="/#roadmap" className="flex flex-col items-center space-y-1 hover:text-gray-300">
           Roadmap
         </a>
-        <a href="https://docs.nomota.nl" target="_blank" className="flex flex-col items-center space-y-1 hover:text-gray-300">
+        <a
+          href="https://docs.nomota.nl"
+          target="_blank"
+          className="flex flex-col items-center space-y-1 hover:text-gray-300"
+        >
           Docs
         </a>
       </div>

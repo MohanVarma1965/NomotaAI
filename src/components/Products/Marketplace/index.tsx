@@ -84,7 +84,7 @@ const Marketplace: React.FC = () => {
           an optimal balance of performance and cost.
         </p>
         <div className="flex flex-col items-center justify-center ">
-          <img src="/cpu.png" style={{ maxWidth: '250px', width: '100%' }} alt="CPU" />
+          <img src="/products/cpu.png" style={{ maxWidth: '250px', width: '100%' }} alt="CPU" />
         </div>
 
         <div>

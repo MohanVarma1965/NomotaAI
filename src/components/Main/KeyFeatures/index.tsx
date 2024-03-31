@@ -7,40 +7,40 @@ import { Link } from 'react-router-dom';
 
 const features = [
   {
-    icon: 'cpu.png',
+    icon: '/products/cpu.png',
     title: 'VPS / GPU Marketplace',
     to: '/products/marketplace',
     description:
       'A groundbreaking platform where technology meets creativity, unlocking unparalleled opportunities for both resource providers and users',
   },
   {
-    icon: 'chat.png',
+    icon: '/products/chat.png',
     title: 'Real-Time Chat',
     to: '/products/chatbot',
     description: 'An advanced AI-driven platform designed to engage users in natural, human-like conversations',
   },
   {
-    icon: 'image.png',
+    icon: '/products/image.png',
     title: 'Innovative image generation',
     to: '/products/image-generation',
     description: 'Generate stunning images in high resolution, perfect for a range of creative projects',
   },
   {
-    icon: 'voice.png',
+    icon: '/products/voice.png',
     title: 'Lifelike voice synthesis',
     to: '/products/voice-synthesis',
     description:
       'Transforms text into lifelike speech, enabling seamless creation of voiceovers, audiobooks, and interactive voice responses with unmatched realism',
   },
   {
-    icon: 'music.png',
+    icon: '/products/music.png',
     title: 'Music Generation',
     to: '/products/music-generation',
     description:
       'Leveraging the power of AI to compose original music, offering creators an endless stream of customizable tunes for videos, games, and personal projects',
   },
   {
-    icon: 'staking.png',
+    icon: '/products/staking.png',
     title: 'Staking',
     to: '/products/staking',
     description:

@@ -27,7 +27,7 @@ const Chatbot: React.FC = () => {
           </a>
         </div>
         <div className="flex flex-col items-center justify-center ">
-          <img src="/chat.png" style={{ maxWidth: '250px', width: '100%' }} alt="chat" />
+          <img src="/products/chat.png" style={{ maxWidth: '250px', width: '100%' }} alt="chat" />
         </div>
         <div>
           <h2 className="my-8 text-xl font-bold md:text-2xl">Features</h2>

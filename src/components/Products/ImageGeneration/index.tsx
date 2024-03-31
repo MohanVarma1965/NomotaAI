@@ -26,7 +26,7 @@ const ImageGeneration: React.FC = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center ">
-          <img src="/image.png" style={{ maxWidth: '250px', width: '100%' }} alt="Art image" />
+          <img src="/products/image.png" style={{ maxWidth: '250px', width: '100%' }} alt="Art image" />
         </div>
         <h2 className="my-8 text-xl font-bold md:text-2xl">Key Features</h2>
         <p className="mb-6 text-gray-600">

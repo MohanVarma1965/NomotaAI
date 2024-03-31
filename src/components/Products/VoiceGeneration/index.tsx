@@ -15,7 +15,7 @@ const VoiceGeneration: React.FC = () => {
           and ensure a seamless listening experience, all in preparation for a broader launch.
         </p>
         <div className="flex flex-col items-center justify-center ">
-          <img src="/voice.png" style={{ maxWidth: '250px', width: '100%' }} alt="Voice image" />
+          <img src="/products/voice.png" style={{ maxWidth: '250px', width: '100%' }} alt="Voice image" />
         </div>
         <div>
           <h2 className="my-8 text-xl font-bold md:text-2xl">Key Features</h2>
