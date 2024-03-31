@@ -66,12 +66,12 @@
 
 @media (min-width: 768px) {
   .features-grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 
-  .features-grid > :nth-child(n+4) {
+  /* .features-grid > :nth-child(n+7) {
     grid-column: span 2 / span 2;
-  }
+  } */
 }
 
 .feature-card {
@@ -114,10 +114,20 @@
 
 @media (min-width: 768px) {
   .features-grid:first-of-type {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .features-grid:last-of-type {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .features-grid:first-of-type {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .features-grid:last-of-type {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

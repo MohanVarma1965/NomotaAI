@@ -1,28 +1,25 @@
-import React from "react";
-import FooterColumn from "./FooterColumn";
+import React from 'react';
+import FooterColumn from './FooterColumn';
 
 const Footer: React.FC = () => {
   const footerData = [
     {
-      title: "DEVELOPMENT",
+      title: 'DEVELOPMENT',
       links: [
-        { name: "Status", url: "https://status.nomota.nl" },
-        { name: "Documentation", url: "https://docs.nomota.nl" },
+        { name: 'Status', url: 'https://status.nomota.nl' },
+        { name: 'Documentation', url: 'https://docs.nomota.nl' },
       ],
     },
     {
-      title: "ABOUT",
-      links: [
-        { name: "About us", to: "/about" },
-        { name: "Blog", to: "/blog" },
-      ],
+      title: 'ABOUT',
+      links: [{ name: 'About us', to: '/about' }],
     },
     {
-      title: "LEGAL",
+      title: 'LEGAL',
       links: [
-        { name: "Acceptable Use Policy", to: "/acceptable-use" },
-        { name: "Terms of Service", to: "/terms" },
-        { name: "Privacy policy", to: "/privacy-policy" },
+        { name: 'Acceptable Use Policy', to: '/acceptable-use' },
+        { name: 'Terms of Service', to: '/terms' },
+        { name: 'Privacy policy', to: '/privacy-policy' },
       ],
     },
   ];
@@ -35,9 +32,7 @@ const Footer: React.FC = () => {
             <FooterColumn key={index} title={column.title} links={column.links} />
           ))}
         </div>
-        <div className="text-center text-sm text-gray-500 mt-8">
-          © 2024 Nomota
-        </div>
+        <div className="text-center text-sm text-gray-500 mt-8">© 2024 Nomota AI</div>
       </div>
     </footer>
   );

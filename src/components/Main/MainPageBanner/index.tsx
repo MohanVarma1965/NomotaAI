@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const MainPageBanner: React.FC = () => {
@@ -45,6 +46,7 @@ const MainPageBanner: React.FC = () => {
               </span>
             </a>
 
+
             <a
               href="#"
               className="relative flex items-center justify-center px-3 py-3 transition-all duration-300 border border-gray-600 rounded-lg group overflow-hidden"
@@ -68,12 +70,15 @@ const MainPageBanner: React.FC = () => {
               >
                 Coming Soon
               </span>
+
             </a>
           </div>
         </div>
       </div>
-      <div className="flex-1 hidden mt-8 md:mt-0 lg:flex">
-        <img src="./mainImage.webp" alt="Crypto" className="w-full h-auto" />
+
+      <div className="main-banner-image flex-1 hidden lg:block">
+        <img src="./picture.png" alt="Crypto" className="w-full h-auto" />
+
       </div>
     </div>
   );

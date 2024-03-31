@@ -1,5 +1,5 @@
-import React from "react";
-import FeaturesSection from "../FeaturesSection";
+import React from 'react';
+import FeaturesSection from '../Main/KeyFeatures';
 
 const Products: React.FC = () => {
   return (
