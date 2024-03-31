@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import './MainPageBanner.css'; 
+import './MainPageBanner.css';
 
 const MainPageBanner: React.FC = () => {
-
   const [subTitle, setSubTitle] = useState('');
-  const fullSubTitle = "Where technology meets creativity...";
-  const typingSpeed=150;
+  const fullSubTitle = 'Where technology meets creativity...';
+  const typingSpeed = 150;
 
   useEffect(() => {
     function typeWriter(text: string, i: number) {
@@ -26,29 +25,36 @@ const MainPageBanner: React.FC = () => {
         <h1 className="main-banner-title mb-6 text-5xl font-bold leading-tight">
           The crypto ecosystem for boundless innovation
         </h1>
-        <p className="main-banner-subtitle max-w-xl mb-6 text-xl md:text-2xl text-gray-400">
-          {subTitle}
-        </p>
+        <p className="main-banner-subtitle max-w-xl mb-6 text-xl md:text-2xl text-gray-400">{subTitle}</p>
         <div className="mb-8">
           <span className="block mb-4 text-2xl font-bold">
             Buy <span className="text-red-600">Nomota AI:</span>
           </span>
 
-        <div className="main-banner-buttons">
-          <a href="#" className="banner-button bg-transparent border border-gray-500 text-black hover:bg-green-500 hover:text-white px-4 py-2 rounded transition duration-500 ease-in-out">
-          🐍 KuCoin
-          </a>
-          <a href="#" className="banner-button bg-transparent border border-gray-500 text-black hover:bg-pink-500 hover:text-white px-4 py-2 rounded transition duration-500 ease-in-out mx-2">
-          🦄 Uniswap
-          </a>
-          <a href="#" className="banner-button bg-transparent border border-gray-500 text-black hover:bg-yellow-400 hover:text-white px-4 py-2 rounded transition duration-500 ease-in-out">
-          🥞 PancakeSwap
-          </a>
-        </div>
+          <div className="main-banner-buttons">
+            <a
+              href="#"
+              className="banner-button bg-transparent border border-gray-500 text-black hover:bg-green-500 hover:text-white px-4 py-2 rounded transition duration-500 ease-in-out"
+            >
+              🐍 KuCoin
+            </a>
+            <a
+              href="#"
+              className="banner-button bg-transparent border border-gray-500 text-black hover:bg-pink-500 hover:text-white px-4 py-2 rounded transition duration-500 ease-in-out mx-2"
+            >
+              🦄 Uniswap
+            </a>
+            <a
+              href="#"
+              className="banner-button bg-transparent border border-gray-500 text-black hover:bg-yellow-400 hover:text-white px-4 py-2 rounded transition duration-500 ease-in-out"
+            >
+              🥞 PancakeSwap
+            </a>
+          </div>
         </div>
       </div>
       <div className="main-banner-image flex-1 hidden lg:block">
-        <img src="./mainImage.webp" alt="Crypto" className="w-full h-auto" />
+        <img src="./picture.png" alt="Crypto" className="w-full h-auto" />
       </div>
     </div>
   );
