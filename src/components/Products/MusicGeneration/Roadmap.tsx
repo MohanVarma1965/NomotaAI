@@ -5,7 +5,7 @@ const roadmap = {
   title: 'Roadmap for Music Generation',
   months: [
     {
-      title: 'April 2024',
+      title: 'May 2024',
       milestones: [
         {
           iconColor: 'orange',
@@ -22,7 +22,7 @@ const roadmap = {
       ],
     },
     {
-      title: 'May 2024',
+      title: 'June 2024',
       milestones: [
         {
           iconColor: 'red',

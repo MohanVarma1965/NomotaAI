@@ -26,6 +26,7 @@ const Staking: React.FC = () => {
           [button]Coming soon[/button]
         </div>
       </div>
+      <img src="/staking.png" />
       <div>
         <h2>Staking in the Nomota AI Ecosystem</h2>
         <p>

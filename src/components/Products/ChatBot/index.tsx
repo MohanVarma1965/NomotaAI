@@ -16,6 +16,7 @@ const Chatbot: React.FC = () => {
         for a variety of needs, including educational support, entertainment, and practical guidance, embodying Nomota
         AI's commitment to blending technology with creativity to enhance digital experiences.
       </p>
+      <img src="/chat.png" />
       <div>
         <h2>Features</h2>
         <p>

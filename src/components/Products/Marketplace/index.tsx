@@ -80,8 +80,7 @@ const Marketplace: React.FC = () => {
         matching algorithms, we ensure that resource seekers are paired with the most suitable providers, guaranteeing
         an optimal balance of performance and cost.
       </p>
-      <div>[placeholder for image]</div>
-
+      <img src="/cpu.png" />
       <div>
         <h2>Provide CPU and GPU power</h2>
         <p>
