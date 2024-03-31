@@ -13,11 +13,11 @@ interface MarketPlaceSubItemProps {
 const MarketPlaceItem: React.FC<MarketPlaceItemProps> = ({ title, items }) => {
   return (
     <div>
-      <h3>{title}</h3>
+      <h3 className="mb-8">{title}</h3>
       {items.map((item, index) => (
         <div>
-          <h4>{item.title}</h4>
-          <p>{item.description}</p>
+          <h4 className="mb-3 text-xl md:text-2xl text-pink-900">{item.title}</h4>
+          <p className="my-3 text-gray-500">{item.description}</p>
         </div>
       ))}
     </div>

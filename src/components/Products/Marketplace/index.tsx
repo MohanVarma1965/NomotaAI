@@ -68,39 +68,41 @@ const data = [
 const Marketplace: React.FC = () => {
   useTitle('Nomota AI - GPU and VPS marketplace');
   return (
-    <div>
-      <h1>VPS & GPU Ecosystem</h1>
-      <h3>Decentralized computing power</h3>
-      <p>
-        Welcome to Nomota AI's CPU/GPU Marketplace, a groundbreaking platform where technology meets creativity,
-        unlocking unparalleled opportunities for both resource providers and users.
-      </p>
-      <p>
-        Nomota AI's marketplace is built on principles of transparency, efficiency, and mutual benefit. With advanced
-        matching algorithms, we ensure that resource seekers are paired with the most suitable providers, guaranteeing
-        an optimal balance of performance and cost.
-      </p>
-      <img src="/cpu.png" />
-      <div>
-        <h2>Provide CPU and GPU power</h2>
-        <p>
-          For those with spare CPU/GPU capacity, our platform represents a unique opportunity to contribute to the
-          creative community while earning rewards. By listing your resources, you become an integral part of a vibrant
-          ecosystem, supporting a wide range of projects and innovations.
+    <div className="p-8 py-12 text-gray-800 bg-white sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="mb-6 text-3xl font-bold md:text-4xl">VPS & GPU Ecosystem</h1>
+        <h2 className="mb-8 text-xl font-semibold md:text-2xl">Decentralized computing power</h2>
+        <p className="mb-6 text-gray-600">
+          Welcome to Nomota AI's CPU/GPU Marketplace, a groundbreaking platform where technology meets creativity,
+          unlocking unparalleled opportunities for both resource providers and users.
         </p>
-        <p>Computing rewards: to be announced as soon as possible</p>
-      </div>
-      <div>
-        <h2>Pay-as-you-go access to CPU and GPU power</h2>
-        <p>
-          Individuals and organizations in need of computational resources can harness the power of available CPU and
-          GPU power through a flexible and efficient pay-as-you-go model. This approach is gives you access to
-          high-performance computing, making it accessible for projects of all sizes and scopes, from small-scale
-          creative endeavors to large, computationally intensive tasks. Here's how it works:
+        <p className="mb-6 text-gray-600">
+          Nomota AI's marketplace is built on principles of transparency, efficiency, and mutual benefit. With advanced
+          matching algorithms, we ensure that resource seekers are paired with the most suitable providers, guaranteeing
+          an optimal balance of performance and cost.
         </p>
-        {data.map((item) => (
-          <MarketPlaceItem {...item} />
-        ))}
+        <img src="/cpu.png" />
+        <div>
+          <h2 className="mb-8 text-xl font-semibold md:text-2xl">Provide CPU and GPU power</h2>
+          <p className="mb-6 text-gray-600">
+            For those with spare CPU/GPU capacity, our platform represents a unique opportunity to contribute to the
+            creative community while earning rewards. By listing your resources, you become an integral part of a
+            vibrant ecosystem, supporting a wide range of projects and innovations.
+          </p>
+          <p className="mb-6 text-gray-600">Computing rewards: to be announced as soon as possible</p>
+        </div>
+        <div>
+          <h2 className="mb-8 text-xl font-semibold md:text-2xl">Pay-as-you-go access to CPU and GPU power</h2>
+          <p className="mb-6 text-gray-600">
+            Individuals and organizations in need of computational resources can harness the power of available CPU and
+            GPU power through a flexible and efficient pay-as-you-go model. This approach is gives you access to
+            high-performance computing, making it accessible for projects of all sizes and scopes, from small-scale
+            creative endeavors to large, computationally intensive tasks. Here's how it works:
+          </p>
+          {data.map((item) => (
+            <MarketPlaceItem {...item} />
+          ))}
+        </div>
       </div>
       <Roadmap />
     </div>
