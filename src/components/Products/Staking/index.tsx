@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTitle } from '../../Effects';
+import Roadmap from './Roadmap';
 
 const Staking: React.FC = () => {
   useTitle('Nomota AI - Get rewarded for staking your tokens - 7% - 15% APY');
@@ -49,6 +50,7 @@ const Staking: React.FC = () => {
           invested in the platform's success and growth.
         </p>
       </div>
+      <Roadmap />
     </div>
   );
 };
