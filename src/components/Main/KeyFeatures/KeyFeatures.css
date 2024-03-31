@@ -42,7 +42,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../../assets/dim_background.webp') center center no-repeat;
+  background-color:  #1F2937;;
+  /* background: url('../../assets/dim_background.webp') center center no-repeat; */
   background-size: cover;
   z-index: -1; 
   animation: blinkBackground 3s ease-in-out infinite;
@@ -60,6 +61,7 @@
   display: grid;
   gap: 2rem;
   justify-content: center;
+  justify-items: center; 
 }
 
 @media (min-width: 768px) {
@@ -73,7 +75,8 @@
 }
 
 .feature-card {
-  background: rgba(0, 0, 0, 0.7);
+  background-color: #111827;
+  /* background: rgba(0, 0, 0, 0.7); */
   border-radius: 15px;
   padding: 2rem;
   color: #fff;
