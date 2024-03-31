@@ -6,21 +6,24 @@ import marketplaceIcon from '../../assets/KeyFeatures_2.jpg';
 import aiServiceIcon from '../../assets/KeyFeatures_1.jpg';
 import revenueIcon from '../../assets/KeyFeatures_1.jpg';
 import Decentralization from '../../assets/KeyFeatures_2.jpg';
+import music from '../../assets/music.png';
+import staking from '../../assets/staking.png';
+import voice from '../../assets/voice.png';
 
 const features = [
   {
-    icon: gpuIcon,
+    icon: music,
     title: 'GPUs',
     description: 'Access the latest Ada Lovelace and Ampere options via CPU passthrough for maximum performance.',
   },
   {
-    icon: marketplaceIcon,
+    icon: staking,
     title: 'Marketplace',
     description:
       'Leverage and transact in VPS tokens by contributing or utilizing AI models & applications within our Marketplace.',
   },
   {
-    icon: aiServiceIcon,
+    icon: voice,
     title: 'AI-as-a-Service (AIaaS)',
     description:
       'Subscription-based access to turn-key AI services to utilize data analysis, enhance customer service, and improve operational efficiency with minimal initial investment.',

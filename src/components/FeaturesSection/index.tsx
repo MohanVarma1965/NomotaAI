@@ -38,7 +38,7 @@ const featuresData = [
   {
     title: 'Staking',
     description: 'Stake your $NAI for 7% to 15% APY',
-    imageUrl: 'image-generation.webp',
+    imageUrl: 'staking.png',
     linkUrl: '/products/staking',
   },
 ];
