@@ -29,6 +29,13 @@ const Header: React.FC = () => {
           >
             Documentation
           </a>
+          <a
+            href="/documents/Nomota%20AI%20whitepaper%20v1%20feb%202024.pdf"
+            target="_blank"
+            className="p-2 transition duration-150 ease-in-out hover:text-gray-300"
+          >
+            Whitepaper
+          </a>
         </nav>
 
         <div className="flex items-center space-x-3 md:hidden">
@@ -54,6 +61,13 @@ const Header: React.FC = () => {
           className="flex flex-col items-center space-y-1 hover:text-gray-300"
         >
           Docs
+        </a>
+        <a
+          href="/documents/Nomota%20AI%20whitepaper%20v1%20feb%202024.pdf"
+          target="_blank"
+          className="flex flex-col items-center space-y-1 hover:text-gray-300"
+        >
+          Whitepaper
         </a>
       </div>
     </header>
