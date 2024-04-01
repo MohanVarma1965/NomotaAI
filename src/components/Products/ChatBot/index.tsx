@@ -17,9 +17,17 @@ const Chatbot: React.FC = () => {
           assistant for a variety of needs, including educational support, entertainment, and practical guidance,
           embodying Nomota AI's commitment to blending technology with creativity to enhance digital experiences.
         </p>
-
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-3">
+          <a
+            href="https://t.me/nomotagptbot"
+            target="_blank"
+            className="flex items-center justify-center px-3 py-3 transition-colors duration-300 border border-gray-600 rounded-lg hover:border-pink-500 hover:bg-pink-500 hover:bg-opacity-25"
+          >
+            Try our chatbot right now
+          </a>
+        </div>
         <div className="flex flex-col items-center justify-center ">
-          <img src="/chat.png" style={{ maxWidth: '250px', width: '100%' }} alt="chat" />
+          <img src="/products/chat.png" style={{ maxWidth: '250px', width: '100%' }} alt="chat" />
         </div>
         <div>
           <h2 className="my-8 text-xl font-bold md:text-2xl">Features</h2>

@@ -29,7 +29,7 @@ const Staking: React.FC = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center ">
-          <img src="/staking.png" style={{ maxWidth: '250px', width: '100%' }} alt="staking image" />
+          <img src="/products/staking.png" style={{ maxWidth: '250px', width: '100%' }} alt="staking image" />
         </div>
         <div>
           <h2 className="my-8 text-xl font-bold md:text-2xl">Staking in the Nomota AI Ecosystem</h2>

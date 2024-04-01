@@ -17,7 +17,7 @@ const MusicGeneration: React.FC = () => {
         </p>
 
         <div className="flex flex-col items-center justify-center ">
-          <img src="/music.png" style={{ maxWidth: '250px', width: '100%' }} alt="Musicimage" />
+          <img src="/products/music.png" style={{ maxWidth: '250px', width: '100%' }} alt="Musicimage" />
         </div>
 
         <h2 className="my-8 text-xl font-bold md:text-2xl">Key Features</h2>
