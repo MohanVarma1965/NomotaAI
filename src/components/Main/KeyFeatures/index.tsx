@@ -61,7 +61,7 @@ const KeyFeatures: React.FC = () => {
       <h2 className="mb-8 text-4xl font-bold text-center key-features-title animate-float">Our products</h2>
       <div
         className="grid grid-cols-1 gap-8 mx-auto mb-8 features-grid sm:grid-cols-2 md:grid-cols-3 max-w-7xl"
-        data-aos="fade-right"
+        data-aos="fade-up"
         data-aos-delay="100"
       >
         {features.map((feature, index) => (

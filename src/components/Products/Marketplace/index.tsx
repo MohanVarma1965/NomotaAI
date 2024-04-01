@@ -83,8 +83,14 @@ const Marketplace: React.FC = () => {
           matching algorithms, we ensure that resource seekers are paired with the most suitable providers, guaranteeing
           an optimal balance of performance and cost.
         </p>
-        <div className="flex flex-col items-center justify-center ">
-          <img src="/products/cpu.png" style={{ maxWidth: '250px', width: '100%' }} alt="CPU" />
+
+        <div className="flex flex-col md:flex-row justify-center items-center">
+          <div className="md:w-1/2 flex items-center justify-center">
+            <img src="/products/cpu.png" className="max-w-xs w-full" alt="CPU image" />
+          </div>
+          <div className="md:w-1/2 my-8 flex items-center justify-center">
+            <Roadmap />
+          </div>
         </div>
 
         <div>
@@ -108,9 +114,6 @@ const Marketplace: React.FC = () => {
             <MarketPlaceItem {...item} />
           ))}
         </div>
-      </div>
-      <div className="my-8 flex flex-col items-center justify-center">
-        <Roadmap />
       </div>
     </div>
   );

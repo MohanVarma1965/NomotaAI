@@ -7,29 +7,31 @@ const Staking: React.FC = () => {
   return (
     <div className="p-8 py-12 text-gray-800 bg-white sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <h1>Staking - lock your tokens and receive rewards</h1>
-        <div>
-          {/* these two blocks should be next to eachother */}
-          <div>
-            <h1>Staking pool 1</h1>
+        <h1 className="mb-6 text-3xl font-bold md:text-4xl">Staking - lock your tokens and receive rewards</h1>
+        <div className="flex flex-col md:flex-row justify-center md:space-x-4">
+          <div className="flex flex-col md:w-1/2 my-2 px-2 items-center md:items-start space-y-4 bg-gray-200 p-4 rounded-lg">
+            <h1 className="text-lg font-bold">Staking pool 1</h1>
             <h2>Lock-up period: 14 days</h2>
             <h2>Rewards: 7% APY</h2>
-            [placeholder for an image]
-            <br />
-            [button]Coming soon[/button]
+            <img src="/products/staking.png" alt="Placeholder" className="w-32 h-32" />{' '}
+            <button className="px-4 py-2 bg-gray-500 text-white rounded-md">Coming soon</button>
           </div>
-          <div>
-            <h1>Staking pool 2</h1>
+          <div className="flex flex-col md:w-1/2 my-2 px-2 items-center md:items-start space-y-4 bg-gray-200 p-4 rounded-lg">
+            <h1 className="text-lg font-bold">Staking pool 2</h1>
             <h2>Lock-up period: 56 days</h2>
             <h2>Rewards: 15% APY</h2>
-            [placeholder for an image]
-            <br />
-            [button]Coming soon[/button]
+            <img src="/products/staking.png" alt="Placeholder" className="w-32 h-32" />{' '}
+            <button className="px-4 py-2 bg-gray-500 text-white rounded-md">Coming soon</button>
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center ">
-          <img src="/products/staking.png" style={{ maxWidth: '250px', width: '100%' }} alt="staking image" />
+        <div className="flex flex-col md:flex-row justify-center items-center">
+          <div className="md:w-1/2 flex items-center justify-center">
+            <img src="/products/staking.png" className="max-w-xs w-full" alt="staking image" />
+          </div>
+          <div className="md:w-1/2 my-8 flex items-center justify-center">
+            <Roadmap />
+          </div>
         </div>
         <div>
           <h2 className="my-8 text-xl font-bold md:text-2xl">Staking in the Nomota AI Ecosystem</h2>
@@ -55,7 +57,6 @@ const Staking: React.FC = () => {
             invested in the platform's success and growth.
           </p>
         </div>
-        <Roadmap />
       </div>
     </div>
   );

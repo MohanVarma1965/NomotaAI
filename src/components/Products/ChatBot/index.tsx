@@ -26,9 +26,16 @@ const Chatbot: React.FC = () => {
             Try our chatbot right now
           </a>
         </div>
-        <div className="flex flex-col items-center justify-center ">
-          <img src="/products/chat.png" style={{ maxWidth: '250px', width: '100%' }} alt="chat" />
+
+        <div className="flex flex-col md:flex-row justify-center items-center">
+          <div className="md:w-1/2 flex items-center justify-center">
+            <img src="/products/chat.png" className="max-w-xs w-full" alt="chat" />
+          </div>
+          <div className="md:w-1/2 my-8 flex items-center justify-center">
+            <Roadmap />
+          </div>
         </div>
+
         <div>
           <h2 className="my-8 text-xl font-bold md:text-2xl">Features</h2>
           <p className="mb-6 text-gray-600">
@@ -102,9 +109,7 @@ const Chatbot: React.FC = () => {
             when technology meets creativity.
           </p>
         </div>
-        <div className="my-8 flex flex-col items-center justify-center">
-          <Roadmap />
-        </div>
+
         <div>
           <h1 className="mb-6 text-3xl font-bold md:text-4xl">Beta Phase</h1>
           <p className="mb-6 text-gray-600">

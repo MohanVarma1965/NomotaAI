@@ -16,8 +16,13 @@ const MusicGeneration: React.FC = () => {
           as we prepare for a full-scale launch.
         </p>
 
-        <div className="flex flex-col items-center justify-center ">
-          <img src="/products/music.png" style={{ maxWidth: '250px', width: '100%' }} alt="Musicimage" />
+        <div className="flex flex-col md:flex-row justify-center items-center">
+          <div className="md:w-1/2 flex items-center justify-center">
+            <img src="/products/music.png" className="max-w-xs w-full" alt="music image" />
+          </div>
+          <div className="md:w-1/2 my-8 flex items-center justify-center">
+            <Roadmap />
+          </div>
         </div>
 
         <h2 className="my-8 text-xl font-bold md:text-2xl">Key Features</h2>
@@ -62,10 +67,6 @@ const MusicGeneration: React.FC = () => {
           active participation and feedback are invaluable to us as we fine-tune Nomota AI's Music Generation to
           orchestrate a platform where technology orchestrates creativity.
         </p>
-
-        <div className="my-8 flex flex-col items-center justify-center">
-          <Roadmap />
-        </div>
       </div>
     </div>
   );

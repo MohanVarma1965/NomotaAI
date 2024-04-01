@@ -14,9 +14,15 @@ const VoiceGeneration: React.FC = () => {
           possibilities. During this beta phase, we're fine-tuning every nuance to perfect the human-like inflections
           and ensure a seamless listening experience, all in preparation for a broader launch.
         </p>
-        <div className="flex flex-col items-center justify-center ">
-          <img src="/products/voice.png" style={{ maxWidth: '250px', width: '100%' }} alt="Voice image" />
+        <div className="flex flex-col md:flex-row justify-center items-center">
+          <div className="md:w-1/2 flex items-center justify-center">
+            <img src="/products/voice.png" className="max-w-xs w-full" alt="voice image" />
+          </div>
+          <div className="md:w-1/2 my-8 flex items-center justify-center">
+            <Roadmap />
+          </div>
         </div>
+
         <div>
           <h2 className="my-8 text-xl font-bold md:text-2xl">Key Features</h2>
           <h3>Realistic Voice Synthesis</h3>
@@ -42,9 +48,6 @@ const VoiceGeneration: React.FC = () => {
           <p className="mb-6 text-gray-600">
             Adjust speaking rate, pitch, and tone for each voice to fit the specific needs of your project.
           </p>
-        </div>
-        <div className="my-8 flex flex-col items-center justify-center">
-          <Roadmap />
         </div>
       </div>
     </div>

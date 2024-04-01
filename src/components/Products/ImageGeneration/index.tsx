@@ -25,9 +25,15 @@ const ImageGeneration: React.FC = () => {
           </a>
         </div>
 
-        <div className="flex flex-col items-center justify-center ">
-          <img src="/products/image.png" style={{ maxWidth: '250px', width: '100%' }} alt="Art image" />
+        <div className="flex flex-col md:flex-row justify-center items-center">
+          <div className="md:w-1/2 flex items-center justify-center">
+            <img src="/products/image.png" className="max-w-xs w-full" alt="art image" />
+          </div>
+          <div className="md:w-1/2 my-8 flex items-center justify-center">
+            <Roadmap />
+          </div>
         </div>
+
         <h2 className="my-8 text-xl font-bold md:text-2xl">Key Features</h2>
         <p className="mb-6 text-gray-600">
           Our Image Generation platform offers a suite of features designed to cater to artists, designers, and anyone
@@ -58,9 +64,7 @@ const ImageGeneration: React.FC = () => {
             you envisioned.
           </p>
         </div>
-        <div className="my-8 flex flex-col items-center justify-center">
-          <Roadmap />
-        </div>
+
         <h2 className="my-8 text-xl font-bold md:text-2xl">Beta Limitations</h2>
         <p className="mb-6 text-gray-600">
           During the beta phase of Nomota AI's Image Generation, we're implementing temporary limitations to ensure the
