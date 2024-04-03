@@ -57,7 +57,9 @@
       animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
     }
   }
-
+  svg {
+    display: inline-block;
+  }
   .button {
     position: relative;
     cursor: pointer;

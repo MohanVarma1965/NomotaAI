@@ -11,6 +11,36 @@ const MainPageBanner: React.FC = () => {
         <p className="main-banner-subtitle max-w-xl mb-6 text-md md:text-xl text-gray-400">
           <span className="typing-animation">The crypto ecosystem for boundless innovation</span>
         </p>
+        <div className="mb-8 flex justify-left">
+          <a
+            href="https://twitter.com/nomotaai"
+            className="transition-colors duration-200 px-3 py-1 hover:text-blue-400 border border-gray-600 rounded-lg "
+            target="_blank"
+          >
+            <svg aria-label="X" className="w-6 h-6" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+            Follow us on Twitter for the latest news
+          </a>
+        </div>
+        <div className="mb-8 flex justify-left">
+          <a
+            href="https://t.me/nomotaai"
+            className="transition-colors duration-200 px-3 py-1 hover:text-blue-500 border border-gray-600 rounded-lg "
+            target="_blank"
+          >
+            <svg
+              aria-label="Telegram"
+              className="w-6 h-6"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M9.036 15.464l-.932 3.285c-.096.337.418.478.622.2l1.27-1.74 2.457 1.827c.418.313.774.2.905-.295l3.38-15.112c.13-.496-.291-.713-.62-.498L.725 9.607c-.497.238-.498.498-.025.635l3.3 1.054 7.338-4.595c.335-.21.64-.04.283.04z" />
+            </svg>
+            Join our community on Telegram
+          </a>
+        </div>
         <div className="mb-8">
           <span className="block mb-4 text-2xl font-bold">
             Buy <span className="text-red-600">Nomota AI:</span>
