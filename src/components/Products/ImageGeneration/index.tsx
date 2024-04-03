@@ -27,7 +27,7 @@ const ImageGeneration: React.FC = () => {
 
         <div className="flex flex-col md:flex-row justify-center items-center">
           <div className="md:w-1/2 flex items-center justify-center">
-            <img src="/products/image.png" className="max-w-xs w-full" alt="art image" />
+            <img src="/image.png" className="max-w-xs w-full" alt="art image" />
           </div>
           <div className="md:w-1/2 my-8 flex items-center justify-center">
             <Roadmap />

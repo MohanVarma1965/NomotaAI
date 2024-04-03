@@ -1,5 +1,6 @@
 import React from 'react';
 import FooterColumn from './FooterColumn';
+import SocialIcons from './SocialIcons';
 
 const Footer: React.FC = () => {
   const footerData = [
@@ -8,6 +9,7 @@ const Footer: React.FC = () => {
       links: [
         { name: 'Status', url: 'https://status.nomota.nl' },
         { name: 'Documentation', url: 'https://docs.nomota.nl' },
+        { name: 'Whitepaper', url: '/documents/Nomota%20AI%20whitepaper%20v1%20feb%202024.pdf' },
       ],
     },
     {
@@ -26,6 +28,9 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-white py-8">
+      <div>
+        <SocialIcons />
+      </div>
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-3 gap-8">
           {footerData.map((column, index) => (

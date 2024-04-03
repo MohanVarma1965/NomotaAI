@@ -31,7 +31,7 @@ const AboutUs: React.FC = () => {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
             <div className="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-sm">
               <div className="w-24 h-24 mb-3 overflow-hidden bg-gray-300 rounded-full">
-                <img src="./casper.jpg" />
+                <img src="/casper.jpg" />
               </div>
               <h4 className="mb-1 font-semibold">Casper</h4>
               <p className="mb-3 text-sm text-gray-600">CEO & Founder</p>

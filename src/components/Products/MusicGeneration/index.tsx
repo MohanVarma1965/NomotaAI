@@ -18,7 +18,7 @@ const MusicGeneration: React.FC = () => {
 
         <div className="flex flex-col md:flex-row justify-center items-center">
           <div className="md:w-1/2 flex items-center justify-center">
-            <img src="/products/music.png" className="max-w-xs w-full" alt="music image" />
+            <img src="/music.png" className="max-w-xs w-full" alt="music image" />
           </div>
           <div className="md:w-1/2 my-8 flex items-center justify-center">
             <Roadmap />

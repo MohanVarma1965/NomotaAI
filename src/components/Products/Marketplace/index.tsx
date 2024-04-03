@@ -86,7 +86,7 @@ const Marketplace: React.FC = () => {
 
         <div className="flex flex-col md:flex-row justify-center items-center">
           <div className="md:w-1/2 flex items-center justify-center">
-            <img src="/products/cpu.png" className="max-w-xs w-full" alt="CPU image" />
+            <img src="/cpu.png" className="max-w-xs w-full" alt="CPU image" />
           </div>
           <div className="md:w-1/2 my-8 flex items-center justify-center">
             <Roadmap />

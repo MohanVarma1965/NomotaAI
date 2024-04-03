@@ -13,21 +13,21 @@ const Staking: React.FC = () => {
             <h1 className="text-lg font-bold">Staking pool 1</h1>
             <h2>Lock-up period: 14 days</h2>
             <h2>Rewards: 7% APY</h2>
-            <img src="/products/staking.png" alt="Placeholder" className="w-32 h-32" />{' '}
+            <img src="/staking.png" alt="Placeholder" className="w-32 h-32" />{' '}
             <button className="px-4 py-2 bg-gray-500 text-white rounded-md">Coming soon</button>
           </div>
           <div className="flex flex-col md:w-1/2 my-2 px-2 items-center md:items-start space-y-4 bg-gray-200 p-4 rounded-lg">
             <h1 className="text-lg font-bold">Staking pool 2</h1>
             <h2>Lock-up period: 56 days</h2>
             <h2>Rewards: 15% APY</h2>
-            <img src="/products/staking.png" alt="Placeholder" className="w-32 h-32" />{' '}
+            <img src="/staking.png" alt="Placeholder" className="w-32 h-32" />{' '}
             <button className="px-4 py-2 bg-gray-500 text-white rounded-md">Coming soon</button>
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row justify-center items-center">
           <div className="md:w-1/2 flex items-center justify-center">
-            <img src="/products/staking.png" className="max-w-xs w-full" alt="staking image" />
+            <img src="/staking.png" className="max-w-xs w-full" alt="staking image" />
           </div>
           <div className="md:w-1/2 my-8 flex items-center justify-center">
             <Roadmap />
