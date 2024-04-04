@@ -12,7 +12,7 @@ const Header: React.FC = () => {
           Nomota AI
         </Link>
 
-        <nav className="hidden space-x-6 text-lg md:flex">
+        <nav className="hidden space-x-2 text-lg md:flex">
           <Link to="/products" className="p-2 transition duration-150 ease-in-out hover:text-gray-300">
             Products
           </Link>
@@ -37,12 +37,6 @@ const Header: React.FC = () => {
             Whitepaper
           </a>
         </nav>
-
-        <div className="flex items-center space-x-3 md:hidden">
-          <span className="px-2 py-1 text-sm border border-gray-600 rounded">EN</span>
-          <span className="px-2 py-1 text-sm border border-gray-600 rounded">⚙️</span>
-          <span className="px-2 py-1 text-sm border border-gray-600 rounded">👤</span>
-        </div>
       </div>
 
       <div className="flex items-center justify-around py-4 text-lg bg-gray-800 border border-gray-700 md:hidden">
@@ -51,16 +45,6 @@ const Header: React.FC = () => {
         </Link>
         <a href="/#tokenomcs" className="flex flex-col items-center space-y-1 hover:text-gray-300">
           Tokenomics
-        </a>
-        <a href="/#roadmap" className="flex flex-col items-center space-y-1 hover:text-gray-300">
-          Roadmap
-        </a>
-        <a
-          href="https://docs.nomota.nl"
-          target="_blank"
-          className="flex flex-col items-center space-y-1 hover:text-gray-300"
-        >
-          Docs
         </a>
         <a
           href="/documents/Nomota%20AI%20whitepaper%20v1%20feb%202024.pdf"
