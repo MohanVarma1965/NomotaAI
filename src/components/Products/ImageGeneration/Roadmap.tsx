@@ -1,31 +1,40 @@
 import React from 'react';
 import RoadmapItem from '../../RoadmapItem';
-import {IconColor} from '../../RoadmapItem/index'
+import { IconColor } from '../../RoadmapItem/index';
 const roadmap = {
   title: 'Roadmap for Image generation',
   months: [
+    {
+      title: 'March 2024',
+      milestones: [
+        {
+          iconColor: 'green' as IconColor,
+          description: 'Determine beta limits',
+        },
+        {
+          iconColor: 'green' as IconColor,
+          description: 'Include in status page',
+        },
+        {
+          iconColor: 'orange' as IconColor,
+          description: 'Launch beta with single image request',
+        },
+      ],
+    },
     {
       title: 'April 2024',
       milestones: [
         {
           iconColor: 'green' as IconColor,
-          description: 'Beta launch',
+          description: 'Upgrade image model and quality',
         },
         {
           iconColor: 'green' as IconColor,
-          description: 'Integrated on status page',
-        },
-        {
-          iconColor: 'green' as IconColor,
-          description: 'Single image requests',
+          description: 'Add watermark for beta',
         },
         {
           iconColor: 'orange' as IconColor,
-          description: 'Upgrade of quality',
-        },
-        {
-          iconColor: 'orange' as IconColor,
-          description: 'Premium service for stakers',
+          description: 'Remove beta limits for stakers',
         },
       ],
     },
@@ -43,6 +52,24 @@ const roadmap = {
         {
           iconColor: 'red' as IconColor,
           description: 'Upload image as base model',
+        },
+      ],
+    },
+    {
+      title: 'June 2024',
+      milestones: [
+        {
+          iconColor: 'red' as IconColor,
+          description: 'Alternative resolutions',
+        },
+      ],
+    },
+    {
+      title: 'Q3 2024',
+      milestones: [
+        {
+          iconColor: 'red' as IconColor,
+          description: 'Combine with other bots',
         },
       ],
     },

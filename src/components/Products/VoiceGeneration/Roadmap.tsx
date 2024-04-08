@@ -1,6 +1,6 @@
 import React from 'react';
 import RoadmapItem from '../../RoadmapItem';
-import {IconColor} from '../../RoadmapItem/index'
+import { IconColor } from '../../RoadmapItem/index';
 const roadmap = {
   title: 'Voice Generation roadmap',
   months: [
@@ -8,20 +8,12 @@ const roadmap = {
       title: 'April 2024',
       milestones: [
         {
-          iconColor: 'green' as IconColor,
+          iconColor: 'Orange' as IconColor,
           description: 'Beta launch',
         },
         {
           iconColor: 'green' as IconColor,
           description: 'Integrated on status page',
-        },
-        {
-          iconColor: 'orange' as IconColor,
-          description: 'Conversation history',
-        },
-        {
-          iconColor: 'red' as IconColor,
-          description: 'Premium service for stakers',
         },
       ],
     },
@@ -30,11 +22,29 @@ const roadmap = {
       milestones: [
         {
           iconColor: 'red' as IconColor,
+          description: 'Improvements on options (speed, voice models, intonation)',
+        },
+      ],
+    },
+    {
+      title: 'June 2024',
+      milestones: [
+        {
+          iconColor: 'red' as IconColor,
           description: 'Official release of version 1',
         },
         {
           iconColor: 'red' as IconColor,
-          description: 'Improved language model',
+          description: 'Premium features for stakers',
+        },
+      ],
+    },
+    {
+      title: 'Q3 2024',
+      milestones: [
+        {
+          iconColor: 'red' as IconColor,
+          description: 'Combine with other bots',
         },
       ],
     },

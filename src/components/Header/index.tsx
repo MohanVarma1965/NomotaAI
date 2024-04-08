@@ -30,7 +30,7 @@ const Header: React.FC = () => {
             Documentation
           </a>
           <a
-            href="/documents/Nomota%20AI%20whitepaper%20v1%20feb%202024.pdf"
+            href="/documents/Nomota-AI-whitepaper-v2.pdf"
             target="_blank"
             className="p-2 transition duration-150 ease-in-out hover:text-gray-300"
           >
@@ -47,7 +47,7 @@ const Header: React.FC = () => {
           Tokenomics
         </a>
         <a
-          href="/documents/Nomota%20AI%20whitepaper%20v1%20feb%202024.pdf"
+          href="/documents/Nomota-AI-whitepaper-v2.pdf"
           target="_blank"
           className="flex flex-col items-center space-y-1 hover:text-gray-300"
         >

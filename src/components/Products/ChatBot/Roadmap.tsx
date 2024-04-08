@@ -1,27 +1,40 @@
 import React from 'react';
 import RoadmapItem from '../../RoadmapItem';
-import {IconColor} from '../../RoadmapItem/index'
+import { IconColor } from '../../RoadmapItem/index';
 const roadmap = {
   title: 'Roadmap for our Chat bot',
   months: [
     {
-      title: 'April 2024',
+      title: 'March 2024',
       milestones: [
         {
           iconColor: 'green' as IconColor,
-          description: 'Beta launch',
+          description: 'Add conversation style chat',
         },
         {
           iconColor: 'green' as IconColor,
-          description: 'Integrated on status page',
+          description: 'Determine beta limits',
         },
+        {
+          iconColor: 'green' as IconColor,
+          description: 'Include in status page',
+        },
+        {
+          iconColor: 'orange' as IconColor,
+          description: 'Launch beta',
+        },
+      ],
+    },
+    {
+      title: 'April 2024',
+      milestones: [
         {
           iconColor: 'orange' as IconColor,
           description: 'Conversation history',
         },
         {
           iconColor: 'red' as IconColor,
-          description: 'Premium service for stakers',
+          description: 'Remove beta limits for stakers',
         },
       ],
     },
@@ -30,11 +43,24 @@ const roadmap = {
       milestones: [
         {
           iconColor: 'red' as IconColor,
-          description: 'Official release of version 1',
+          description: 'Official launch of version 1',
         },
         {
           iconColor: 'red' as IconColor,
-          description: 'Improved language model',
+          description: 'Improved language model and knowledge',
+        },
+      ],
+    },
+    {
+      title: 'Q3 2024',
+      milestones: [
+        {
+          iconColor: 'red' as IconColor,
+          description: 'further improvements to knowledge base',
+        },
+        {
+          iconColor: 'red' as IconColor,
+          description: 'Combine with other bots',
         },
       ],
     },
