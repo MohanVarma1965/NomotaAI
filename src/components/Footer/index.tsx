@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       links: [
         { name: 'Status', url: 'https://status.nomota.nl' },
         { name: 'Documentation', url: 'https://docs.nomota.nl' },
-        { name: 'Whitepaper', url: '/documents/Nomota%20AI%20whitepaper%20v1%20feb%202024.pdf' },
+        { name: 'Whitepaper', url: '/documents/Nomota-AI-whitepaper-v2.pdf' },
       ],
     },
     {
