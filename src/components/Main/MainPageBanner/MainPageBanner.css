@@ -19,7 +19,7 @@
     0 0 5px #9c4dff,
     /* Inner light glow */ 0 0 15px #a289c0,
     /* Medium glow */ 0 0 30px #7573d1,
-    /* Outer large glow */ 0 0 60px #d95e87;
+    /* Outer large glow */ 0 0 60px #fafafa;
 }
 
 .bg-glow-telegram {
@@ -28,7 +28,7 @@
     0 0 5px #9c4dff,
     /* Inner light glow */ 0 0 15px #a289c0,
     /* Medium glow */ 0 0 30px #7573d1,
-    /* Outer large glow */ 0 0 60px #d95e87;
+    /* Outer large glow */ 0 0 60px #faf9f9;
 }
 
 .main-page-banner {
