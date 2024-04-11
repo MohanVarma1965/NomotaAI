@@ -14,7 +14,7 @@ const MainPageBanner: React.FC = () => {
         <div className="mb-8 flex justify-left ">
           <a
             href="https://twitter.com/nomotaai"
-            className="bg-glow-twitter transition-colors duration-200 px-3 py-1 hover:text-blue-400 border border-gray-600 rounded-lg"
+            className="bg-glow-twitter transition-colors duration-200 px-3 py-1 hover:text-blue-400 border  rounded-lg"
             target="_blank"
           >
             <svg
@@ -32,7 +32,7 @@ const MainPageBanner: React.FC = () => {
         <div className="mb-8 flex justify-left">
           <a
             href="https://t.me/nomotaai"
-            className="bg-glow-telegram transition-colors duration-200 px-3 py-1 hover:text-blue-500 border border-gray-600 rounded-lg "
+            className="bg-glow-telegram transition-colors duration-200 px-3 py-1 hover:text-blue-500 border  rounded-lg "
             target="_blank"
           >
             <svg
