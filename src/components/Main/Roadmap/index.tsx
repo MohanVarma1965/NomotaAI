@@ -18,9 +18,9 @@ const Roadmap: React.FC = () => {
   }, []);
 
   return (
-    <div className="px-4 py-12 bg-white">
+    <div className=" roadmap-bg-image px-4 py-12 bg-white">
       <div className="mb-8 text-center">
-        <h2 id="roadmap" className="text-3xl font-bold text-gray-900">
+        <h2 id="roadmap" className="text-3xl font-bold text-white">
           Roadmap
         </h2>
         <div className="w-56 h-1 mx-auto my-4 bg-red-600" />

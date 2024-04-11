@@ -1,6 +1,7 @@
 import React from 'react';
 import FooterColumn from './FooterColumn';
 import SocialIcons from './SocialIcons';
+import './footer.css';
 
 const Footer: React.FC = () => {
   const footerData = [
@@ -27,7 +28,7 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-white py-8">
+    <footer className="footer-bg-img py-8">
       <div>
         <SocialIcons />
       </div>
@@ -37,7 +38,7 @@ const Footer: React.FC = () => {
             <FooterColumn key={index} title={column.title} links={column.links} />
           ))}
         </div>
-        <div className="text-center text-sm text-gray-500 mt-8">© 2024 Nomota AI</div>
+        <div className="text-center text-sm text-white mt-8">© 2024 Nomota AI</div>
       </div>
     </footer>
   );

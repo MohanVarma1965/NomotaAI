@@ -1,4 +1,4 @@
-.roadmap-bg-image {
+.footer-bg-img {
   background: black;
   background-image: url('../../../src/assets/8.png');
   background-repeat: no-repeat;
@@ -15,16 +15,4 @@
   @media (min-width: 1536px) {
     background-size: 100% 1536px;
   }
-}
-
-.icon-green {
-  color: green;
-}
-
-.icon-red {
-  color: red;
-}
-
-.icon-orange {
-  color: #ffa500;
 }
