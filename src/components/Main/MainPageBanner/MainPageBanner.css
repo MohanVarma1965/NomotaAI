@@ -12,23 +12,38 @@
     border-color: transparent;
   }
 }
-
-.bg-glow-twitter {
-  background-color: #e1e1ea; /* Dark background to enhance the glow */
-  box-shadow:
-    0 0 5px #9c4dff,
-    /* Inner light glow */ 0 0 15px #a289c0,
-    /* Medium glow */ 0 0 30px #7573d1,
-    /* Outer large glow */ 0 0 60px #fafafa;
+.main-banner-container-background {
+  background: black;
+  background-image: url('../../../assets/6-bg.png');
+  @media (min-width: 768px) {
+    background-size: 100% 768px;
+  }
+  @media (min-width: 1024px) {
+    background-size: 100% 1024px;
+  }
+  @media (min-width: 1280px) {
+    background-size: 100% 1280px;
+  }
+  @media (min-width: 1536px) {
+    background-size: 100% 1536px;
+  }
+}
+.main-banner-container {
+  background-image: url('../../../assets/6.png');
+  background-size: 100%;
 }
 
-.bg-glow-telegram {
+.bg-glow {
   background-color: #e1e1ea; /* Dark background to enhance the glow */
   box-shadow:
     0 0 5px #9c4dff,
     /* Inner light glow */ 0 0 15px #a289c0,
     /* Medium glow */ 0 0 30px #7573d1,
     /* Outer large glow */ 0 0 60px #faf9f9;
+
+}
+.bg-glow {
+  height: 60px;
 }
 
 .main-page-banner {
