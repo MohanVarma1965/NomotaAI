@@ -13,7 +13,7 @@ interface FooterColumnProps {
 const FooterColumn: React.FC<FooterColumnProps> = ({ title, links }) => {
   return (
     <div className="flex flex-col">
-      <h5 className="text-xl font-bold mb-4">{title}</h5>
+      <h5 className="text-xl font-bold mb-4 text-gray-300">{title}</h5>
       <ul>
         {links.map((link, index) => (
           <li key={index} className="mb-2">
