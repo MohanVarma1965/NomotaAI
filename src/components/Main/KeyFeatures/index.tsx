@@ -57,7 +57,13 @@ const KeyFeatures: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative px-4 py-16 overflow-hidden text-white bg-black key-features">
+    <section
+      style={{
+        backgroundImage: 'linear-gradient(to bottom, rgb(18, 13, 51), rgb(34, 40, 96))',
+        borderTop: '2px solid #fd75d0',
+      }}
+      className="relative px-4 py-16 overflow-hidden text-white bg-black key-features"
+    >
       <h2 className="mb-8 text-4xl font-bold text-center key-features-title animate-float">Our products</h2>
       <div
         className="grid grid-cols-1 gap-8 mx-auto mb-8 features-grid sm:grid-cols-2 md:grid-cols-3 max-w-7xl"

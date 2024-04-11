@@ -1,10 +1,16 @@
 @keyframes blink {
-  0%, 100% { background-color: #000; }
-  50% { background-color: #111; }
+  0%,
+  100% {
+    background-color: #000;
+  }
+  50% {
+    background-color: #111;
+  }
 }
 
 @keyframes shine {
-  0%, 100% {
+  0%,
+  100% {
     border-color: rgba(255, 255, 255, 0.5);
   }
   50% {
@@ -13,26 +19,41 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 @keyframes blinkBackground {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.7; } 
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
 }
 
 .key-features {
   position: relative;
   padding: 4rem 1rem;
-  background: #000; 
+  background: #000;
   background-size: cover;
   z-index: 1;
+  border-top: 1px solid rgb(253, 117, 208);
 }
 
 .key-features:before {
@@ -42,10 +63,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color:  #1F2937;;
+  background-color: #1f2937;
   /* background: url('../../assets/dim_background.webp') center center no-repeat; */
   background-size: cover;
-  z-index: -1; 
+  z-index: -1;
   animation: blinkBackground 3s ease-in-out infinite;
 }
 
@@ -61,7 +82,7 @@
   display: grid;
   gap: 2rem;
   justify-content: center;
-  justify-items: center; 
+  justify-items: center;
 }
 
 @media (min-width: 768px) {
@@ -81,9 +102,11 @@
   padding: 2rem;
   color: #fff;
   border: 2px solid transparent;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
   overflow: hidden;
-  width: 100%; 
+  width: 100%;
   max-width: 300px;
 }
 

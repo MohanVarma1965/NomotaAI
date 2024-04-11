@@ -3,6 +3,7 @@
   background-image: url('../../../src/assets/8.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
+  border-top: 1px solid rgb(253, 117, 208);
   @media (min-width: 768px) {
     background-size: 100% 768px;
   }

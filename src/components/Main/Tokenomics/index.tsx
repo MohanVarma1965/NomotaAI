@@ -45,7 +45,13 @@ const Tokenomics: React.FC = () => {
   }, []);
 
   return (
-    <div className="py-12 text-white bg-gradient-to-b from-gray-800 to-gray-900 md:px-4 max-md:p-8">
+    <div
+      style={{
+        backgroundImage: 'linear-gradient(to bottom, rgb(18, 13, 51), rgb(34, 40, 96))',
+        borderTop: '1px solid #fd75d0',
+      }}
+      className="py-12 text-white md:px-4 max-md:p-8"
+    >
       <div className="mb-12 text-center" data-aos="fade-bottom" data-aos-delay="300">
         <h2 id="tokenomics" className="text-4xl font-bold">
           Tokenomics
