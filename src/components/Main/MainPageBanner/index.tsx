@@ -54,7 +54,7 @@ const MainPageBanner: React.FC = () => {
                 href="#"
                 className="banner-button relative flex bg-glow items-center justify-center px-3 py-1 border border-gray-600 rounded-lg transition-all duration-300 group hover:border-red-500 "
               >
-                <img src="/mexc.jpeg" style={{ maxHeight: '40px', height: '100%' }} />
+                <img src="/mexc_logo.png" style={{ maxHeight: '20px', height: '100%' }} />
                 <div className="overlay absolute inset-0 rounded-lg bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 cursor-not-allowed text-white">
                   Coming Soon
                 </div>
