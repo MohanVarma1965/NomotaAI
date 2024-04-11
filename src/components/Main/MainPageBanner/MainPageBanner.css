@@ -1,33 +1,57 @@
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+  from {
+    width: 0;
   }
-  
-  @keyframes blink-caret {
-    50% { border-color: transparent; }
+  to {
+    width: 100%;
   }
-  
-  .main-page-banner {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
   }
-  
-  .main-banner-content {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .main-banner-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  /* .main-banner-subtitle {
+}
+
+.bg-glow-twitter {
+  background-color: #e1e1ea; /* Dark background to enhance the glow */
+  box-shadow:
+    0 0 5px #9c4dff,
+    /* Inner light glow */ 0 0 15px #a289c0,
+    /* Medium glow */ 0 0 30px #7573d1,
+    /* Outer large glow */ 0 0 60px #d95e87;
+}
+
+.bg-glow-telegram {
+  background-color: #e1e1ea; /* Dark background to enhance the glow */
+  box-shadow:
+    0 0 5px #9c4dff,
+    /* Inner light glow */ 0 0 15px #a289c0,
+    /* Medium glow */ 0 0 30px #7573d1,
+    /* Outer large glow */ 0 0 60px #d95e87;
+}
+
+.main-page-banner {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-banner-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* .main-banner-subtitle {
     font-size: 1.5rem;
     color: #9fa6b2;
     margin-bottom: 2rem;
@@ -37,56 +61,59 @@
     
   } */
 
-  /* @media (min-width: 768px){
+/* @media (min-width: 768px){
     .main-banner-subtitle{
         white-space: nowrap;
         animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite; 
     }
   } */
 
-  
+.typing-animation {
+  display: inline-block;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  padding-right: 0.5em;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
   .typing-animation {
-    display: inline-block; 
-    border-right: 2px solid rgba(255, 255, 255, 0.75);
-    padding-right: 0.5em;
-    overflow: hidden;
+    white-space: nowrap;
+    animation:
+      typing 4s steps(40, end),
+      blink-caret 0.75s step-end infinite;
   }
-  @media (min-width: 768px) {
-    .typing-animation {
-      white-space: nowrap; 
-      animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
-    }
-  }
-  svg {
-    display: inline-block;
-  }
-  .button {
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    border: 2px solid black;
-  }
-  .button .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.75);
-    color: white;
-    border-radius: 0.5rem;
-    opacity: 0;
-    transition: background-color 300ms ease, opacity 300ms ease;
-    cursor: not-allowed;
-    pointer-events: none;
-    font-weight: bold;
-    font-size: 1rem;
-  }
-  .button:hover .overlay {
-    background-color: rgba(0, 0, 0, 1);
-    opacity: 1; 
-    pointer-events: all;
-  }  
+}
+svg {
+  display: inline-block;
+}
+.button {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid black;
+}
+.button .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition:
+    background-color 300ms ease,
+    opacity 300ms ease;
+  cursor: not-allowed;
+  pointer-events: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.button:hover .overlay {
+  background-color: rgba(0, 0, 0, 1);
+  opacity: 1;
+  pointer-events: all;
+}
