@@ -13,7 +13,7 @@ const MainPageBanner: React.FC = () => {
             <span className="typing-animation">The crypto ecosystem for boundless innovation</span>
           </p>
           <div className="mb-8">
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-2">
+            <div className="grid  gap-4 sm:grid-cols-1 md:grid-cols-2">
               <a
                 href="https://twitter.com/nomotaai"
                 className="flex bg-glow transition-colors items-center justify-center duration-200 px-3 py-1 hover:text-blue-400 border  rounded-lg hover:border-pink-500 hover:bg-pink-500 hover:bg-opacity-50"
@@ -83,7 +83,7 @@ const MainPageBanner: React.FC = () => {
 
             <p className="main-banner-subtitle max-w-xl mb-6 text-md md:text-xl text-gray-200">
               <br />
-              <span className="block mb-4 text-lg font-bold">CA: 0x837ee5a664d51bc2e7d26eb63cffeb48e037bde2</span>
+              <span className="block mb-4 text-xs font-bold">CA: 0x837ee5a664d51bc2e7d26eb63cffeb48e037bde2</span>
             </p>
           </div>
         </div>

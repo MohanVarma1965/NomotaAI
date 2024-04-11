@@ -12,9 +12,12 @@
     border-color: transparent;
   }
 }
+
 .main-banner-container-background {
   background: black;
-  background-image: url('../../../assets/6-bg.png');
+  background-image: url('../../../assets/6.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   @media (min-width: 768px) {
     background-size: 100% 768px;
   }
@@ -28,10 +31,6 @@
     background-size: 100% 1536px;
   }
 }
-.main-banner-container {
-  background-image: url('../../../assets/6.png');
-  background-size: 100%;
-}
 
 .bg-glow {
   background-color: #e1e1ea; /* Dark background to enhance the glow */
@@ -40,7 +39,6 @@
     /* Inner light glow */ 0 0 15px #a289c0,
     /* Medium glow */ 0 0 30px #7573d1,
     /* Outer large glow */ 0 0 60px #faf9f9;
-
 }
 .bg-glow {
   height: 60px;
