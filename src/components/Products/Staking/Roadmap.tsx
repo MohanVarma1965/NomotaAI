@@ -8,7 +8,7 @@ const roadmap = {
       title: 'April 2024',
       milestones: [
         {
-          iconColor: 'orange' as IconColor,
+          iconColor: 'green' as IconColor,
           description: 'Launch of staking platform',
         },
         {
