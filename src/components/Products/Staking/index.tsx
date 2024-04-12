@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTitle } from '../../Effects';
 import Roadmap from './Roadmap';
+import './staking.css';
 
 const Staking: React.FC = () => {
   useTitle('Nomota AI - Get rewarded for staking your tokens - 7% - 15% APY');
@@ -14,16 +15,12 @@ const Staking: React.FC = () => {
             <br />
             <h2>Lock-up period: 14 days</h2>
             <h2>Rewards: 7% APY</h2>
-            {/* <img src="/staking.png" alt="Placeholder" className="w-32 h-32" />{' '} */}
-            <button className="px-4 py-2 bg-gray-500 text-white rounded-md">Coming soon</button>
           </div>
           <div className="flex flex-col md:w-1/2 my-2 px-2 items-center md:items-start space-y-4 bg-gray-200 p-4 rounded-lg">
             <h1 className="text-lg font-bold">Staking pool 2</h1>
             <br />
             <h2>Lock-up period: 56 days</h2>
             <h2>Rewards: 15% APY</h2>
-            {/* <img src="/staking.png" alt="Placeholder" className="w-32 h-32" />{' '} */}
-            <button className="px-4 py-2 bg-gray-500 text-white rounded-md">Coming soon</button>
           </div>
           <div className="flex flex-col md:w-1/2 my-2 px-2 items-center md:items-start space-y-4 bg-gray-200 p-4 rounded-lg">
             <h1 className="text-lg font-bold">
@@ -32,11 +29,17 @@ const Staking: React.FC = () => {
             </h1>
             <h2>Lock-up period: 63 days(max: 180)</h2>
             <h2>Rewards: 50% APY</h2>
-            {/* <img src="/staking.png" alt="Placeholder" className="w-32 h-32" />{' '} */}
-            <button className="px-4 py-2 bg-gray-500 text-white rounded-md">Coming soon</button>
           </div>
         </div>
-
+        <div className="flex flex-col md:flex-row justify-center items-center">
+          <a
+            href="https://staking.nomota.nl"
+            target="_blank"
+            className="my-10 px-6 py-3 text-2xl text-pink-400 rounded-md bg-glow bg-gray-700 hover:text-pink-100 hover:bg-gray-900 duration-300"
+          >
+            Go to the staking dapp
+          </a>
+        </div>
         <div className="flex flex-col md:flex-row justify-center items-center">
           <div className="md:w-1/2 flex items-center justify-center">
             <img src="/staking.png" className="max-w-xs w-full" alt="staking image" />
