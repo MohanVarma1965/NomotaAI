@@ -4,7 +4,6 @@ import ChatBotRoadmap from '../../Products/ChatBot/Roadmap';
 import ImageGenerationRoadmap from '../../Products/ImageGeneration/Roadmap';
 import MarketplaceRoadmap from '../../Products/Marketplace/Roadmap';
 import MusicGenerationRoadmap from '../../Products/MusicGeneration/Roadmap';
-import StakingRoadmap from '../../Products/Staking/Roadmap';
 import VoiceGenerationRoadmap from '../../Products/VoiceGeneration/Roadmap';
 
 import 'aos/dist/aos.css';
@@ -30,7 +29,6 @@ const Roadmap: React.FC = () => {
         <ImageGenerationRoadmap />
         <MarketplaceRoadmap />
         <MusicGenerationRoadmap />
-        <StakingRoadmap />
         <VoiceGenerationRoadmap />
       </div>
     </div>

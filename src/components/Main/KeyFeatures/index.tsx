@@ -21,13 +21,13 @@ const features = [
   },
   {
     icon: '/image.png',
-    title: 'Innovative image generation',
+    title: 'Innovative Image Generation',
     to: '/products/image-generation',
     description: 'Generate stunning images in high resolution, perfect for a range of creative projects',
   },
   {
     icon: '/voice.png',
-    title: 'Lifelike voice synthesis',
+    title: 'Lifelike Voice Synthesis',
     to: '/products/voice-synthesis',
     description:
       'Transforms text into lifelike speech, enabling seamless creation of voiceovers, audiobooks, and interactive voice responses with unmatched realism',
@@ -44,7 +44,7 @@ const features = [
     title: 'Staking',
     to: '/products/staking',
     description:
-      'Stake your $NAI to get 7% to 15% APY. Staking rewards can be used to purchase CPU/GPU, and can be used as credits for chat, image, voice and music generation',
+      'Stake your $NMAI to get 7% to 15% APY. Staking rewards can be used to purchase VPS/GPU, and can be used as credits for chat, image, voice and music generation',
   },
 ];
 

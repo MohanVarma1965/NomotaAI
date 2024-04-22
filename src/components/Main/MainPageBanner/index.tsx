@@ -37,7 +37,7 @@ const MainPageBanner: React.FC = () => {
             </div>
           </div>
           <div className="mb-8">
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-2">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-1">
               <a
                 href="https://app.uniswap.org/swap?outputCurrency=0x837ee5a664d51bc2e7d26eb63cffeb48e037bde2&inputCurrency=ETH"
                 className="flex bg-glow items-center justify-center px-3 py-1  duration-300 border border-gray-600 rounded-lg hover:border-pink-500 hover:bg-pink-500 hover:bg-opacity-50"
@@ -48,16 +48,7 @@ const MainPageBanner: React.FC = () => {
                     fill="#fc72ff"
                   ></path>
                 </svg>
-                Uniswap
-              </a>
-              <a
-                href="#"
-                className="banner-button relative flex bg-glow items-center justify-center px-3 py-1 border border-gray-600 rounded-lg transition-all duration-300 group hover:border-red-500 "
-              >
-                <img src="/mexc_logo.png" style={{ maxHeight: '20px', height: '100%' }} />
-                <div className="overlay absolute inset-0 rounded-lg bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 cursor-not-allowed text-white">
-                  Coming Soon
-                </div>
+                Buy now on Uniswap
               </a>
             </div>
           </div>

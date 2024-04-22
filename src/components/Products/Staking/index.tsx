@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTitle } from '../../Effects';
-import Roadmap from './Roadmap';
 import './staking.css';
 
 const Staking: React.FC = () => {
@@ -44,9 +43,7 @@ const Staking: React.FC = () => {
           <div className="md:w-1/2 flex items-center justify-center">
             <img src="/staking.png" className="max-w-xs w-full" alt="staking image" />
           </div>
-          <div className="md:w-1/2 my-8 flex items-center justify-center">
-            <Roadmap />
-          </div>
+          <div className="md:w-1/2 my-8 flex items-center justify-center"></div>
         </div>
         <div>
           <h2 className="my-8 text-xl font-bold md:text-2xl">Staking in the Nomota AI Ecosystem</h2>

@@ -14,12 +14,13 @@ const Footer: React.FC = () => {
       ],
     },
     {
-      title: 'ABOUT',
-      links: [{ name: 'About us', to: '/about' }],
+      title: 'REWARDS',
+      links: [{ name: 'Staking', url: 'https://staking.nomota.nl' }],
     },
     {
-      title: 'LEGAL',
+      title: 'ABOUT/LEGAL',
       links: [
+        { name: 'About us', to: '/about' },
         { name: 'Acceptable Use Policy', to: '/acceptable-use' },
         { name: 'Terms of Service', to: '/terms' },
         { name: 'Privacy policy', to: '/privacy-policy' },

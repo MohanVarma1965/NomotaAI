@@ -94,18 +94,18 @@ const Marketplace: React.FC = () => {
         </div>
 
         <div>
-          <h2 className="my-8 text-xl font-semibold md:text-2xl">Provide CPU and GPU power</h2>
+          <h2 className="my-8 text-xl font-semibold md:text-2xl">Provide VPS or GPU power</h2>
           <p className="mb-6 text-gray-600">
-            For those with spare CPU/GPU capacity, our platform represents a unique opportunity to contribute to the
+            For those with spare VPS/GPU capacity, our platform represents a unique opportunity to contribute to the
             creative community while earning rewards. By listing your resources, you become an integral part of a
             vibrant ecosystem, supporting a wide range of projects and innovations.
           </p>
           <p className="mb-6 text-gray-600">Computing rewards: to be announced as soon as possible</p>
         </div>
         <div>
-          <h2 className="mb-8 text-xl font-semibold md:text-2xl">Pay-as-you-go access to CPU and GPU power</h2>
+          <h2 className="mb-8 text-xl font-semibold md:text-2xl">Pay-as-you-go access to VPS and GPU power</h2>
           <p className="mb-6 text-gray-600">
-            Individuals and organizations in need of computational resources can harness the power of available CPU and
+            Individuals and organizations in need of computational resources can harness the power of available VPS and
             GPU power through a flexible and efficient pay-as-you-go model. This approach is gives you access to
             high-performance computing, making it accessible for projects of all sizes and scopes, from small-scale
             creative endeavors to large, computationally intensive tasks. Here's how it works:

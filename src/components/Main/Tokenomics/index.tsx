@@ -86,7 +86,7 @@ const Tokenomics: React.FC = () => {
           <div className="flex justify-center mb-4">
             <CheckCircleIcon className="w-8 h-8 text-green-400" />
           </div>
-          <p className="mb-4 font-semibold text-center">Reserved for MEXC and other future CEX listings</p>
+          <p className="mb-4 font-semibold text-center">Reserved for future CEX listings</p>
           <p className="leading-relaxed text-md">
             To broaden accessibility and enhance trading options for our users, we've allocated a significant portion of
             our tokens for liquidity pools on centralized exchanges. This strategic reserve is essential for integrating
@@ -118,16 +118,16 @@ const Tokenomics: React.FC = () => {
           data-aos-delay="400"
           className="p-6 transition duration-300 ease-in-out bg-gray-700 shadow-lg rounded-xl hover:scale-105"
         >
-          <h3 className="mb-2 text-2xl font-bold text-center">Allocated for Investors</h3>
+          <h3 className="mb-2 text-2xl font-bold text-center">Allocated for Investors and Team</h3>
           <div className="flex justify-center">{generateCircle(5)}</div>
           <div className="flex justify-center mb-4">
             <CheckCircleIcon className="w-8 h-8 text-green-400" />
           </div>
           <p className="mb-4 font-semibold text-center">Vesting Period of 6 weeks</p>
           <p className="leading-relaxed text-md">
-            Recognizing the crucial role of our early supporters, we've earmarked a portion of tokens for our investors.
-            This allocation comes with a vesting period of 6 weeks, ensuring our investors are aligned with the
-            long-term vision and success of Nomota AI, while also allowing for gradual market entry.
+            Recognizing the crucial role of our early supporters, we've earmarked a portion of tokens for our investors
+            and the team. This allocation comes with a vesting period of 6 weeks, ensuring our investors are aligned
+            with the long-term vision and success of Nomota AI, while also allowing for gradual market entry.
           </p>
         </div>
       </div>

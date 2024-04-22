@@ -33,12 +33,13 @@ const AboutUs: React.FC = () => {
               <div className="w-24 h-24 mb-3 overflow-hidden bg-gray-300 rounded-full">
                 <img src="/casper.jpg" />
               </div>
-              <h4 className="mb-1 font-semibold">Casper</h4>
+              <h4 className="mb-1 font-semibold">Casper de Leuw</h4>
               <p className="mb-3 text-sm text-gray-600">CEO & Founder</p>
               <p className="text-sm text-gray-600">
                 Casper's vision for Nomota AI has always been about breaking barriers and exploring the uncharted
                 territories of AI and software development.
               </p>
+              <a href="https://www.linkedin.com/in/casperdeleuw/">LinkedIn profile</a>
             </div>
           </div>
         </div>

@@ -23,11 +23,11 @@ const Header: React.FC = () => {
             Roadmap
           </Link>
           <a
-            href="https://docs.nomota.nl"
+            href="https://staking.nomota.nl"
             target="_blank"
             className="p-2 transition duration-150 ease-in-out hover:text-gray-300"
           >
-            Documentation
+            Staking
           </a>
           <a
             href="/documents/Nomota-AI-whitepaper-v2.pdf"

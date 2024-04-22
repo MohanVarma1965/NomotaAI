@@ -87,7 +87,7 @@ const Chatbot: React.FC = () => {
 
             <h3 className="mb-3 text-xl font-semibold">Integration with Nomota AI Ecosystem</h3>
             <p className="mb-6 text-gray-600">
-              Seamlessly integrates with other Nomota AI services, including the staking platform and CPU/GPU
+              Seamlessly integrates with other Nomota AI services, including the staking platform and VPS/GPU
               marketplace, for a unified user experience.
             </p>
 

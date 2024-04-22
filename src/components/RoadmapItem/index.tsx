@@ -4,23 +4,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Roadmap.css';
 
-export type IconColor = 'green' | 'orange' | 'red';
 interface RoadmapProps {
-  title: string;
-  months: MonthProps[];
+  src: string;
 }
 
-interface MonthProps {
-  title: string;
-  milestones: MilestoneProps[];
-}
-
-interface MilestoneProps {
-  description: string;
-  iconColor: IconColor;
-}
-
-const RoadmapItem: React.FC<RoadmapProps> = ({ title, months }) => {
+const RoadmapItem: React.FC<RoadmapProps> = ({ src }) => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -39,18 +27,7 @@ const RoadmapItem: React.FC<RoadmapProps> = ({ title, months }) => {
       data-aos="fade-up"
       data-aos-delay="100"
     >
-      <h2 className="text-lg font-bold text-left">{title}</h2>
-      {months.map((month, index_m) => (
-        <div key={index_m} className="space-y-2">
-          <h3 className="text-md font-semibold">{month.title}</h3>
-          {month.milestones.map((milestone, index_ms) => (
-            <div key={index_ms} className="flex items-center space-x-2">
-              <CheckCircleIcon className={`h-5 w-5 ${colorClassMap[milestone.iconColor] || 'text-current'}`} />
-              <span className="flex-1 text-sm">{milestone.description}</span>
-            </div>
-          ))}
-        </div>
-      ))}
+      <img src={src} />
     </div>
   );
 };

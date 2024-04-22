@@ -57,11 +57,11 @@ const MobileNavigation: React.FC = () => {
                   Roadmap
                 </Link>
                 <a
-                  href="https://docs.nomota.nl"
+                  href="https://staking.nomota.nl"
                   target="_blank"
                   className="p-2 text-lg font-medium text-gray-900 rounded-md hover:bg-gray-100"
                 >
-                  Documentation
+                  Staking
                 </a>
                 <a
                   href="/documents/Nomota%20AI%20whitepaper%20v1%20feb%202024.pdf"
