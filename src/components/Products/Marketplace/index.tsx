@@ -10,7 +10,7 @@ const data = [
       {
         subtitle: 'Browse and Select',
         description:
-          'Users start by browsing the marketplace for available CPU and GPU resources. Listings provide detailed specifications, performance ratings, and pricing, enabling users to select the most suitable options for their needs.',
+          'Users start by browsing the marketplace for available VPS and GPU resources. Listings provide detailed specifications, performance ratings, and pricing, enabling users to select the most suitable options for their needs.',
       },
       {
         subtitle: 'Instant Provisioning',
@@ -74,7 +74,7 @@ const Marketplace: React.FC = () => {
         <h2 className="mb-8 text-xl font-semibold md:text-2xl">Decentralized computing power</h2>
 
         <p className="mb-6 text-gray-600">
-          Welcome to Nomota AI's CPU/GPU Marketplace, a groundbreaking platform where technology meets creativity,
+          Welcome to Nomota AI's VPS/GPU Marketplace, a groundbreaking platform where technology meets creativity,
           unlocking unparalleled opportunities for both resource providers and users.
         </p>
 
@@ -86,7 +86,7 @@ const Marketplace: React.FC = () => {
 
         <div className="flex flex-col md:flex-row justify-center items-center">
           <div className="md:w-1/2 flex items-center justify-center">
-            <img src="/cpu.png" className="max-w-xs w-full" alt="CPU image" />
+            <img src="/cpu.png" className="max-w-xs w-full" alt="VPS - GPU image" />
           </div>
           <div className="md:w-1/2 my-8 flex items-center justify-center">
             <Roadmap />
